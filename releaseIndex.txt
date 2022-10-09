@@ -85,6 +85,7 @@
                         |--stackupMaterialDialog.qss
                         |--stackupImpedance.qss
                         |--stackup.qss
+                        |--settingsModule_manager.qss
                         |--settingsModule.qss
                         |--radioButton.qss
                         |--ProgressBar.qss
