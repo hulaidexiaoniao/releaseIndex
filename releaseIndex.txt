@@ -482,6 +482,7 @@
                      |--qoffscreen.dll
                      |--qminimal.dll
                      |--qdirect2d.dll
+                  |--panelSize.ini
                   |--panelizationModule.dll
                   |--Packet.dll
                   |--output
