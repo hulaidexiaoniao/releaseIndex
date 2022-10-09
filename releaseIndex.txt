@@ -4318,6 +4318,7 @@
                   |--DMS_Competence_Widget.dll
                   |--DMS_CompanyManage_Widet.dll
                   |--DMS_Common.dll
+                  |--dmsCfg.ini
                   |--DFM_ToolBar.dll
                   |--DFM_MenuBar_View.dll
                   |--DFM_MenuBar_Tool.dll
