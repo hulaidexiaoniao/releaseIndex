@@ -1,5 +1,3 @@
-         |--C:\Users\Mcy\Desktop\EPEDAPro0930
-            |--EPEDAPro0930
                |--Resources
                   |--qtwebengine_resources_200p.pak
                   |--qtwebengine_resources_100p.pak
@@ -125,6 +123,7 @@
                         |--dropWidget.qss
                         |--drillAnalysisModule.qss
                         |--defaultMenu.qss
+                        |--defaultButton_disable.qss
                         |--defaultButton.qss
                         |--copyStepDialog.qss
                         |--comboBox.qss
