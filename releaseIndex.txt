@@ -4349,14 +4349,7 @@
                      |--pluginConfig.json
                      |--keyboard_default.json
                      |--keyBoardjson
-                        |--��������.json
-                        |--�������Һŷ�.json
-                        |--�Զ���ģ��1.json
-                        |--����������.json
-                        |--���󼯻�.json
-                        |--�ҵ�����.json
-                        |--��ʿ���ʿ���.json
-                        |--�����ط�.json
+                        |--customTamplate1.json
                         |--currentTemplate.txt
                      |--keyboard.json
                      |--jwdms_dbconfig.json
