@@ -378,6 +378,8 @@
                         |--camJobVs_step3.png
                         |--camJobVs_step2.png
                         |--camJobVs_step1.png
+                        |--button_switch_on.png
+                        |--button_switch_off.png
                         |--arrowlater.png
                         |--arrowheaa.png
                      |--font
