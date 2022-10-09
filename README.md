@@ -8,5 +8,5 @@
 20221009
 删除原Line4344 config_additional.ini
 修改原Line4345 config.ini 为 settings.ini
-本次修改人为程博
-文件夹及文件数量4759
+本次修改人为程博，文件夹及文件数量4759
+原Line87后插入 settingsModule_manager.qss，文件夹及文件数量4760
