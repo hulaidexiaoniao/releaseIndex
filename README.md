@@ -23,3 +23,4 @@
 原Line4320后插入新增 dmsCfg.ini，文件夹及文件数量4755
 原Line125后插入新增 defaultButton_disable.qss，文件夹及文件数量4756
 原380行后插入两行，一行button_switch_on.png，一行button_switch_off.png，文件夹及文件数量4758
+原Line7 名字修改去除时间
