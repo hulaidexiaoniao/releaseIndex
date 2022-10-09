@@ -144,8 +144,8 @@
                         |--core.json
                         |--copper.json
                      |--images
-                        |--£¿.png
-                        |--ÕýÈ·ÊµÐÄ.png
+                        |--ï¿½ï¿½.png
+                        |--ï¿½ï¿½È·Êµï¿½ï¿½.png
                         |--write.png
                         |--widget_dropWidget_backImg.png
                         |--Vectorssss.png
@@ -4341,22 +4341,21 @@
                   |--DAL.dll
                   |--cximage.dll
                   |--CppUnit64.dll
-                  |--config_additional.ini
-                  |--config.ini
+                  |--settings.ini
                   |--config
                      |--shortcut_key.json
                      |--server.json
                      |--pluginConfig.json
                      |--keyboard_default.json
                      |--keyBoardjson
-                        |--Èø´ïÈø´ï.json
-                        |--Èø´ïÈö¹ÒºÅ·Ñ.json
-                        |--×Ô¶¨ÒåÄ£°å1.json
-                        |--Èöµ©Èöµ©Èö.json
-                        |--Èö´ó¼¯»á.json
-                        |--ÎÒµÄÊÀ½ç.json
-                        |--·¢Ê¿´ó·òÊ¿´ó·ò.json
-                        |--Èý¸öµØ·½.json
+                        |--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.json
+                        |--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒºÅ·ï¿½.json
+                        |--ï¿½Ô¶ï¿½ï¿½ï¿½Ä£ï¿½ï¿½1.json
+                        |--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.json
+                        |--ï¿½ï¿½ï¿½ó¼¯»ï¿½.json
+                        |--ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½.json
+                        |--ï¿½ï¿½Ê¿ï¿½ï¿½ï¿½Ê¿ï¿½ï¿½ï¿½.json
+                        |--ï¿½ï¿½ï¿½ï¿½ï¿½Ø·ï¿½.json
                         |--currentTemplate.txt
                      |--keyboard.json
                      |--jwdms_dbconfig.json
@@ -4508,7 +4507,7 @@
                               |--client.py
                         |--Drill
                            |--ui_drill_module.py
-                           |--ui_drill_module - ¸±±¾.py
+                           |--ui_drill_module - ï¿½ï¿½ï¿½ï¿½.py
                            |--slot_guide_hole.py
                            |--line_add_guide_hole.py
                            |--import_path.py
