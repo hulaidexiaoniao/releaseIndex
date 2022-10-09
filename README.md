@@ -21,3 +21,4 @@
 此改名影响快捷键，修改人为武龙安，文件夹及文件数量4753
 原Line485行上插入 panelSize.ini，文件夹及文件数量4754
 原Line4320后插入新增 dmsCfg.ini，文件夹及文件数量4755
+原Line125后插入新增 defaultButton_disable.qss，文件夹及文件数量4756
