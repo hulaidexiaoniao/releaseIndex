@@ -5,3 +5,7 @@
   job>eplib(ODB++)
   CAMGuide下不必要guide
   根目录下不必要文件夹
+20221009
+删除原Line4344 config_additional.ini
+修改原Line4345 config.ini 为 settings.ini
+本次修改人为程博
