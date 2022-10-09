@@ -4,7 +4,7 @@
                   |--qtwebengine_resources.pak
                   |--qtwebengine_devtools_resources.pak
                   |--icudtl.dat
-               |--EPEDAPro0930
+               |--EPEDAPro
                   |--zlibwapi.dll
                   |--Widget_Common.dll
                   |--WebView.dll
