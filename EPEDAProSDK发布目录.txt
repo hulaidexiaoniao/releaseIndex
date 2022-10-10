@@ -401,10 +401,5 @@
                         |--dialog.py
                         |--copy_step_to_Pre111.py
                         |--copy_step_to_Pre.py
-               |--bin
-                  |--qwebengine_convert_dict.exe
-                  |--QtWebEngineProcess.exe
-                  |--qt.conf
-                  |--fixqt4headers.pl
                |--batchDfmAnalysisModule.dll
                |--AliyunSdk.dll
