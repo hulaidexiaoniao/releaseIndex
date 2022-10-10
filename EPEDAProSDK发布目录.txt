@@ -80,8 +80,8 @@
                      |--core.json
                      |--copper.json
                   |--images
-                     |--？.png
-                     |--正确实心.png
+                     |--拢驴.png
+                     |--脮媒脠路脢碌脨脛.png
                      |--write.png
                      |--widget_dropWidget_backImg.png
                      |--Vectorssss.png
@@ -402,7 +402,6 @@
                         |--copy_step_to_Pre111.py
                         |--copy_step_to_Pre.py
                |--bin
-                  |--syncqt.pl
                   |--qwebengine_convert_dict.exe
                   |--QtWebEngineProcess.exe
                   |--qt.conf
