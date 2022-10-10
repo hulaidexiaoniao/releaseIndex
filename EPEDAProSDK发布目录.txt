@@ -277,6 +277,7 @@
                      |--factoryRegulations_add.png
                      |--export_success.png
                      |--export_failed.png
+                     |--eq_goBack.png
                      |--eq_deleteImg.png
                      |--eq_addImg.png
                      |--eqEdit.png
@@ -286,6 +287,7 @@
                      |--EPEDAPro.ico
                      |--ellipsis.png
                      |--Edit.png
+                     |--EDAPro_Icon.svg
                      |--EDAPro_Icon.png
                      |--EDAProSys.ico
                      |--dropdown.png
