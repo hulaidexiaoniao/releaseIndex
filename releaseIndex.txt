@@ -504,7 +504,6 @@
                   |--Matrix_MenuBar_Edit.dll
                   |--Matrix_MenuBar.dll
                   |--Matrix.dll
-                  |--login.ini
                   |--log4cplusU.dll
                   |--localJobBackupModule.dll
                   |--ListBar_PNList.dll
@@ -4746,12 +4745,6 @@
                         |--analysis_dfm.py
                   |--bson-1.0.dll
                   |--BLL.dll
-                  |--bin
-                     |--syncqt.pl
-                     |--qwebengine_convert_dict.exe
-                     |--QtWebEngineProcess.exe
-                     |--qt.conf
-                     |--fixqt4headers.pl
                   |--batchDfmAnalysisModule.dll
                   |--api-ms-win-crt-runtime-l1-1-0.dll
                   |--AliyunSdk.dll
