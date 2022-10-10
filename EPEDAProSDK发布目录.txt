@@ -334,6 +334,8 @@
                |--Qt5Qml.dll
                |--Qt5PrintSupport.dll
                |--Qt5Positioning.dll
+               |--QtWebEngineProcess.exe
+               |--qt.conf
                |--preProcessModule.dll
                |--pluginManager.dll
                |--panelSize.ini
