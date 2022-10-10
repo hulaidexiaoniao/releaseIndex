@@ -38,3 +38,5 @@ SDK index
 删除Line407
 删除Line408，文件夹及文件数量405
 原Line336 后插入两行，一行:QtWebEngineProcess.exe 另一行:qt.conf，文件夹及文件数量407
+原Line288后插入新增EDAPro_Icon.svg
+原Line279后插入新增eq_goBack.png，文件夹及文件数量409
