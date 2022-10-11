@@ -71,6 +71,7 @@
                   |--ssleay32.dll
                   |--sqlite3.dll
                   |--settingsModule.dll
+                  |--settings.ini
                   |--resources
                      |--yuepu.png
                      |--stylesheet.qss
@@ -123,7 +124,7 @@
                         |--dropWidget.qss
                         |--drillAnalysisModule.qss
                         |--defaultMenu.qss
-                        |--defaultButton_disable.qss
+                        |--defaultButton_disabled.qss
                         |--defaultButton.qss
                         |--copyStepDialog.qss
                         |--comboBox.qss
@@ -4346,7 +4347,6 @@
                   |--DAL.dll
                   |--cximage.dll
                   |--CppUnit64.dll
-                  |--settings.ini
                   |--config
                      |--shortcut_key.json
                      |--server.json
@@ -4659,38 +4659,6 @@
                            |--drill_classify_attribute.py
                            |--delete_profile_outter.py
                            |--copy_orig_to_net.py
-                     |--DFM_PreGuide
-                        |--Pre
-                           |--ui_module.py
-                           |--translate_copper_surface.py
-                           |--translate_copper_pad.py
-                           |--signal_classify_attribute.py
-                           |--show_robot.py
-                           |--show_netlist.py
-                           |--set_SMD_Pad.py
-                           |--set_profile.py
-                           |--set_originpt1.py
-                           |--set_drill_attribute.py
-                           |--save_job2.py
-                           |--save_job1.py
-                           |--save_job.py
-                           |--positive_negative_merge.py
-                           |--drill_classify_attribute.py
-                           |--drill_check.py
-                           |--delete_profile_outter.py
-                           |--create_outline_layer.py
-                           |--copy_step_to_net.py
-                           |--copy_board_backup_layers.py
-                           |--caculate_aspect_ratio.py
-                           |--auto_matrix.py
-                        |--Orig
-                           |--ui_module.py
-                           |--show_input.py
-                           |--save_job.py
-                           |--main.py
-                           |--dialog.py
-                           |--copy_step_to_Pre111.py
-                           |--copy_step_to_Pre.py
                      |--config
                         |--RobotCam.json
                         |--Robot.json
