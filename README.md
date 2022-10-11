@@ -24,10 +24,12 @@
 原Line125后插入新增 defaultButton_disable.qss，文件夹及文件数量4756
 原380行后插入两行，一行button_switch_on.png，一行button_switch_off.png，文件夹及文件数量4758
 原Line7 名字修改去除时间
+20221010
 删除Line 4749，4750，4751，4752，4753，4754
 删除Line 507 login.ini,文件夹及文件数量4751
 原Line352后插入新增 EDAPro_Icon.svg
 原Line343后插入新增eq_goBack.png，文件夹及文件数量4753
+
 
 ========================================================================================
 SDK index
@@ -42,3 +44,8 @@ SDK index
 原Line336 后插入两行，一行:QtWebEngineProcess.exe 另一行:qt.conf，文件夹及文件数量407
 原Line288后插入新增EDAPro_Icon.svg
 原Line279后插入新增eq_goBack.png，文件夹及文件数量409
+20221011
+删除Line375至Line407计33行
+删除Line369
+删除Line362
+删除Line34，文件夹及文件数量473
