@@ -29,7 +29,11 @@
 删除Line 507 login.ini,文件夹及文件数量4751
 原Line352后插入新增 EDAPro_Icon.svg
 原Line343后插入新增eq_goBack.png，文件夹及文件数量4753
-
+20221011
+删除原Line4662到Line4693 计32行
+删除Line4349
+修改Line126为defaultButton_disabled.qss
+原Line73后添加settings.ini,文件夹及文件数量4721
 
 ========================================================================================
 SDK index
