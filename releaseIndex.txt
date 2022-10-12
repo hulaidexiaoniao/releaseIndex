@@ -4488,6 +4488,7 @@
                            |--import_path.py
                         |--fab
                            |--new_default_template
+                              |--__pycache__
                               |--soldermask_process.py
                               |--outter_process.py
                               |--inner_process.py
@@ -4504,6 +4505,7 @@
                               |--coupon_process.py
                               |--client.py
                         |--Drill
+                           |--__pycache__
                            |--ui_drill_module.py
                            |--ui_drill_module - ����.py
                            |--slot_guide_hole.py
@@ -4538,41 +4540,10 @@
                            |--robot_import_base_path.py
                         |--panel_edge
                            |--__pycache__
-                              |--ui_module.cpython-37.pyc
-                              |--panel_edge_moudule.cpython-37.pyc
                            |--ui_module.py
                            |--panel_edge_moudule.py
                            |--diran_panel
                               |--__pycache__
-                                 |--ui.cpython-37.pyc
-                                 |--testpoint_mk.cpython-37.pyc
-                                 |--target_df.cpython-37.pyc
-                                 |--slice_drill.cpython-37.pyc
-                                 |--set_value.cpython-37.pyc
-                                 |--printmark.cpython-37.pyc
-                                 |--main_win.cpython-37.pyc
-                                 |--main_script_wr.cpython-37.pyc
-                                 |--main_script_gr.cpython-37.pyc
-                                 |--L_target.cpython-37.pyc
-                                 |--import_path.cpython-37.pyc
-                                 |--get_info_methonds.cpython-37.pyc
-                                 |--except_csh.cpython-37.pyc
-                                 |--coordinate_bonding.cpython-37.pyc
-                                 |--add_solder_mask_W.cpython-37.pyc
-                                 |--add_solder_mask_G.cpython-37.pyc
-                                 |--add_silk_screen.cpython-37.pyc
-                                 |--add_outer_WR.cpython-37.pyc
-                                 |--add_outer_GR.cpython-37.pyc
-                                 |--add_outer_2so.cpython-37.pyc
-                                 |--add_outer_2co.cpython-37.pyc
-                                 |--add_nersur.cpython-37.pyc
-                                 |--add_layer_sm.cpython-37.pyc
-                                 |--add_layer_plug.cpython-37.pyc
-                                 |--add_layer_out.cpython-37.pyc
-                                 |--add_layer_alm.cpython-37.pyc
-                                 |--add_innner.cpython-37.pyc
-                                 |--add_drill.cpython-37.pyc
-                                 |--add_dfsm_target.cpython-37.pyc
                               |--ui.py
                               |--testpoint_mk.py
                               |--test.py
@@ -4666,17 +4637,32 @@
                         |--PreGuide.json
                         |--Cam_Module.json
                      |--CamRobot
+                        |--__pycache__
                         |--import_camflow_path.py
                         |--drill_resize.py
                         |--drill_process.py
                         |--drill_classify.py
-                        |--CAMFliow2.py
                         |--CAMFliow.py
                      |--base
                         |--__pycache__
+                           |--UILib.cpython-37.pyc
+                           |--prepare_check.cpython-37.pyc
                            |--layer_info.cpython-37.pyc
                            |--job_operation.cpython-37.pyc
                         |--UILib.py
+                        |--rangesconfig1
+                           |--SurfaceAnalyzer
+                           |--SolderMaskChecks
+                           |--SilkScreenChecks
+                           |--SignalLayerChecks
+                           |--PrepareChecks
+                           |--PadSnapping
+                           |--DrillChecks
+                           |--DFM_Teardrops
+                           |--DFM_SolderMaskOpt
+                           |--DFM_SignalLayerOpt
+                           |--DFM_NFPRemoval
+                           |--BoardDrillChecks
                         |--rangesconfig
                            |--SurfaceAnalyzer
                               |--SurfaceAnalyzerRanges.json
@@ -4707,6 +4693,7 @@
                         |--job_operation.py
                         |--epcam
                            |--__pycache__
+                              |--epcam_log.cpython-37.pyc
                               |--epcam_api.cpython-37.pyc
                               |--epcam.cpython-37.pyc
                            |--epcam_log.py
