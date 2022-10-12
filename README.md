@@ -56,4 +56,4 @@ SDK index
 删除Line375至Line407计33行
 删除Line369
 删除Line362
-删除Line34，文件夹及文件数量473
+删除Line34，文件夹及文件数量373
