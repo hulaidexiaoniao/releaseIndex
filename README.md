@@ -57,3 +57,9 @@ SDK index
 删除Line369
 删除Line362
 删除Line34，文件夹及文件数量373
+20221013
+删除Line83
+删除Line82
+删除Line42
+删除Line41
+删除Line22，文件夹及文件数量368
