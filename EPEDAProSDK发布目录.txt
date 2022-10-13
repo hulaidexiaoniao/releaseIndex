@@ -19,7 +19,6 @@
                      |--tipsWidget.qss
                      |--stackupMaterialDialog.qss
                      |--stackupImpedance.qss
-                     |--stackup.qss
                      |--settingsModule_manager.qss
                      |--settingsModule.qss
                      |--radioButton.qss
@@ -38,8 +37,6 @@
                      |--localJobBackUp.qss
                      |--lineEdit.qss
                      |--keyTableWidget.qss
-                     |--jobInMemoryStyleWidgetSelect.qss
-                     |--jobInMemoryStyleWidgetDeSelect.qss
                      |--JobInMemoryModuleWidget.qss
                      |--jobInMemoryLargeStyleWidgetSelect.qss
                      |--jobInMemoryLargeStyleWidgetRename.qss
@@ -79,8 +76,6 @@
                      |--core.json
                      |--copper.json
                   |--images
-                     |--£¿.png
-                     |--ÕýÈ·ÊµÐÄ.png
                      |--write.png
                      |--widget_dropWidget_backImg.png
                      |--Vectorssss.png
