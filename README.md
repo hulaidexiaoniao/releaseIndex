@@ -71,3 +71,5 @@ SDK index
 删除Line41
 删除Line22，文件夹及文件数量368
 line10后插入添加 travelerModule.dll，文件夹及文件数量369
+删除line287
+删除line133，文件夹及文件数量367
