@@ -196,7 +196,6 @@
                         |--login_min.png
                         |--login_edit.png
                         |--login_close.png
-                        |--login_back.gif
                         |--linkType_true.png
                         |--linkType_none.png
                         |--linkType_break.png
@@ -350,7 +349,6 @@
                         |--Edit.png
                         |--EDAPro_Icon.svg
                         |--EDAPro_Icon.png
-                        |--EDAProSys.ico
                         |--dropdown.png
                         |--dropDowm.png
                         |--dropArrow.png
