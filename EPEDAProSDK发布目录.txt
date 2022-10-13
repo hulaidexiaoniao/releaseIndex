@@ -8,6 +8,7 @@
                |--WebView.dll
                |--utilToolModule.dll
                |--uiWidgetModule.dll
+               |--travelerModule.dll
                |--syncqt.pl
                |--stackUpImpedanceModule.dll
                |--settingsModule.dll
