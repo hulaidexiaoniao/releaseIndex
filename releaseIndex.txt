@@ -16,6 +16,7 @@
                   |--uncompress_tgz.py
                   |--uiWidgetModule.dll
                   |--UIAPICommon.dll
+                  |--travelerModule.dll
                   |--Translator
                      |--MixedLanguage
                         |--graphic_menubar_step_zh_en.qm
