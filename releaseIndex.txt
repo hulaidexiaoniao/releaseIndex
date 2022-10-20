@@ -536,6 +536,7 @@
                   |--Graphic_MenuBar_DFM.dll
                   |--Graphic_MenuBar_Analysis.dll
                   |--Graphic_MenuBar_Actions.dll
+                  |--Graphic_Map.dll
                   |--Graphic_JobList.dll
                   |--Graphic_DI_Tool.dll
                   |--Graphic_Coordinate.dll
@@ -4501,7 +4502,7 @@
                         |--Drill
                            |--__pycache__
                            |--ui_drill_module.py
-                           |--ui_drill_module - ����.py
+                           |--ui_drill_module - 副本.py
                            |--slot_guide_hole.py
                            |--line_add_guide_hole.py
                            |--import_path.py
