@@ -545,6 +545,7 @@
                   |--glog.dll
                   |--globalVarModule.dll
                   |--GerberLib.dll
+                  |--geo.dll
                   |--gds_data_interface.dll
                   |--GDSLib.dll
                   |--Form_View.dll
