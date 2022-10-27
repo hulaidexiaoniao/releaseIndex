@@ -4294,7 +4294,6 @@
                   |--EPCAM-GraphicOverlay.dll
                   |--EPCAM-GraphicEditor.dll
                   |--EPCAM-Enginner.dll
-                  |--EP-CAM.dll
                   |--EditOp.dll
                   |--DxfLib.dll
                   |--drillAnalysisModule.dll
