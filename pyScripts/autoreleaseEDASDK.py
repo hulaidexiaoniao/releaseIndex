@@ -26,14 +26,14 @@ absolutePathList = []
 #从basePath拿取所需的文件
 basePath = r"C:\Users\wulongan\Desktop\EpEDAPro\trunk\EPEDAPro\bin\x64"
 #新的文件放置地址
-newFilePath = os.getcwd()+ "\\" + "EPEPDAPro"
+newFilePath = os.getcwd()+ "\\" + "EPEDAPro_1027"
 #isSDKdir 读取的是proSDK目录时为true，读取的是完整pro目录时为false
-isSDKdir = True         
+isSDKdir = True       
 
 
 if __name__ == '__main__':
     #读取目录
-    fileHandler  =  open  (r"C:\Users\wulongan\Desktop\python--\data.txt",encoding='utf-8')
+    fileHandler  =  open  (r"C:\Users\wulongan\Desktop\python--\EPEDAProSDK.txt",encoding='utf-8')
     while  True:
         # Get next line from file
         line  =  fileHandler.readline()
