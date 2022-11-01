@@ -409,28 +409,28 @@ def create_updateTemp_folder()->bool:
 
 
 if __name__ == '__main__':
-    #删除本地updateTemp文件夹
-    delUpdateTemp = delete_updateTemp_folder() 
-    #创建updateTemp文件夹
-    createUpdateTemp = create_updateTemp_folder()
-    #删除Temp文件夹
-    delTemp =  delete_temp_folder()
-    #创建Temp文件夹
-    createTemp = create_temp_folder()
-    #下载checkList
-    loadCheckList = down_load_oss_checkList()
-    #把本地路径写成txt
-    generatelocaltxt = getLocalFileInfo()
-    #解析两份txt文件为dic
-    standardCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\edaCheckList.txt")
-    localCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\localtree.txt")
-    #获取需要替换的文件列表
-    needReplaceFileList = data_compare(standardCheckList,localCheckList)
-    #获取需要增加的文件列表
-    needAddFileList = get_add_file(standardCheckList,localCheckList)
-    #下载所有需要的文件
+    ##删除本地updateTemp文件夹
+    #delUpdateTemp = delete_updateTemp_folder() 
+    ##创建updateTemp文件夹
+    #createUpdateTemp = create_updateTemp_folder()
+    ##删除Temp文件夹
+    #delTemp =  delete_temp_folder()
+    ##创建Temp文件夹
+    #createTemp = create_temp_folder()
+    ##下载checkList
+    #loadCheckList = down_load_oss_checkList()
+    ##把本地路径写成txt
+    #generatelocaltxt = getLocalFileInfo()
+    ##解析两份txt文件为dic
+    #standardCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\edaCheckList.txt")
+    #localCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\localtree.txt")
+    ##获取需要替换的文件列表
+    #needReplaceFileList = data_compare(standardCheckList,localCheckList)
+    ##获取需要增加的文件列表
+    #needAddFileList = get_add_file(standardCheckList,localCheckList)
+    ##下载所有需要的文件
     # dowmLoadFileResult = down_load_file(needAddFileList,needAddFileList)
-    # #移动下载的文件到相应位置
+    ##移动下载的文件到相应位置
     # removeFileResult = remove_file_to_destpath(needAddFileList,needAddFileList)
 
 
