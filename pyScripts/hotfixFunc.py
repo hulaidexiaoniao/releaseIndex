@@ -1,6 +1,5 @@
 from logging import exception
 import os,requests, sys
-print(sys.path)
 
 import shutil
 import os,hashlib
@@ -19,21 +18,12 @@ updateTempPath = currentPath + "\\updateTemp"
 
 
 class ExceptionOccurred(QObject):
-    sigLocalTxtGenerateError = pyqtSignal(str)
-    sigDateCompareError = pyqtSignal(str)
-    sigGetAddFileListError = pyqtSignal(str)
-    sigTxtFileParseError = pyqtSignal(str)
-    sigDownLoadFileError = pyqtSignal(str)
-    sigRemoveFileError = pyqtSignal(str)
-    sigDeleteTempError = pyqtSignal(str)
-    sigCreateTempError = pyqtSignal(str)
-    sigDeleteUpdatetempError = pyqtSignal(str)
-    sigCreateUpdatetempError = pyqtSignal(str)
-    sigDownLoadCheckListError = pyqtSignal(str)
-    sigJudgeFileWritableError = pyqtSignal(str)
+    sigError = pyqtSignal(str)
+    sigNormal = pyqtSignal(str)
     def __init__(self):
         super().__init__()
 
+errorOccurred = ExceptionOccurred()
 
 class PathTree:
 
@@ -123,8 +113,7 @@ def dsf_show(path_tree,localTxtName)->str:
         updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
         updatelog.write(str(e))
         updatelog.close() 
-        errorOccurred = ExceptionOccurred()
-        errorOccurred.sigLocalTxtGenerateError.emit("本地项目生成文本文件失败")
+        errorOccurred.sigError.emit("生成localCheckList.txt失败,无法生成本地校验目录,即将退出热修")
     ss = localTxtName
     return ss
 
@@ -151,7 +140,7 @@ def check_param(path:str, need_file:int):
     return ''
 
 
-def getLocalFileInfo(basePath = os.getcwd(),localTxtName = currentPath + "\\updateTemp" + '\\localtree.txt')->bool:
+def getLocalFileInfo(basePath = os.getcwd(),localTxtName = currentPath + "\\updateTemp" + '\\localCheckList.txt')->bool:
     """输入本地项目地址，生成一份用于对照的文本
 
     Args:
@@ -161,6 +150,7 @@ def getLocalFileInfo(basePath = os.getcwd(),localTxtName = currentPath + "\\upda
     Returns:
         bool: 生成成功或失败
     """
+    errorOccurred.sigNormal.emit("正在生成localCheckList.txt")
     if os.path.exists(basePath):
        basePath = basePath
     else:
@@ -170,6 +160,7 @@ def getLocalFileInfo(basePath = os.getcwd(),localTxtName = currentPath + "\\upda
 
     txtPath = show_path(base_path_tree,localTxtName)
     if os.path.exists(txtPath):
+        errorOccurred.sigNormal.emit("成功生成localCheckList.txt")
         return True
     else:
         return False
@@ -185,6 +176,7 @@ def data_compare(keyValueDic1:dict,keyValueDic2:dict)->list:
     Returns:
         list: 返回的有差异的文件列表，存储文件相对路径
     """
+    errorOccurred.sigNormal.emit("正在比对差异")
     needReplaceList = []
     try:
         diff = keyValueDic1.keys() &  keyValueDic2
@@ -193,13 +185,13 @@ def data_compare(keyValueDic1:dict,keyValueDic2:dict)->list:
         for differFile in diff_vals:
             ss = differFile[0]
             needReplaceList.append(ss)
+        errorOccurred.sigNormal.emit("成功比对差异")    
         return needReplaceList
     except Exception as e:
         updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
         updatelog.write(str(e))
         updatelog.close() 
-        errorOccurred = ExceptionOccurred()
-        errorOccurred.sigDateCompareError.emit("文件比对失败")
+        errorOccurred.sigError.emit("比对失败,无法比对校验数据,即将退出热修")
     return needReplaceList    
 
 
@@ -214,17 +206,19 @@ def get_add_file(keyValueDic1:dict,keyValueDic2:dict)->list:
     Returns:
         list: 需要增加的文件相对路径列表
     """
+    errorOccurred.sigNormal.emit("正在比对增量")
     needAddFile = []
     try:
         needAddFile = keyValueDic1.keys()-keyValueDic2.keys()
         #print(needAddFile)
+        needAddFile = list(needAddFile)
+        errorOccurred.sigNormal.emit("成功比对增量")
         return needAddFile
     except Exception as e:
         updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
         updatelog.write(str(e))
         updatelog.close() 
-        errorOccurred = ExceptionOccurred()
-        errorOccurred.sigGetAddFileListError.emit("获取需要增加文件列表失败")
+        errorOccurred.sigError.emit("比对失败,无法比对校验数据,即将退出热修")
     return needAddFile
 
 
@@ -237,8 +231,10 @@ def txt_parse(txtPath:str)->dict:
     Returns:
         dict: 生成的字典
     """
+    errorOccurred.sigNormal.emit("正在加载文件校验表")
     keyValueDic = {}
     if os.path.exists(txtPath) == False or txtPath == None:
+        errorOccurred.sigError.emit("加载文件校验表失败,无法读取文件校验数据,即将退出热修") 
         return keyValueDic
     try:
         fileHandler  =  open  (txtPath,encoding='utf-8')
@@ -250,12 +246,12 @@ def txt_parse(txtPath:str)->dict:
             strList = line.split("---")
             #print(str)
             keyValueDic[strList[0]] = strList[1]
+        errorOccurred.sigNormal.emit("加载成功")        
     except Exception as e:
         updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
         updatelog.write(str(e))
         updatelog.close() 
-        errorOccurred = ExceptionOccurred()
-        errorOccurred.sigTxtFileParseError.emit("文本文件解析失败")   
+        errorOccurred.sigError.emit("加载文件校验表失败,无法读取文件校验数据,即将退出热修")   
     return keyValueDic
 
 
@@ -272,6 +268,7 @@ def down_load_file(needRepalceFile:list,needAddFile:list,baseUrlAddress = "https
     """
     downLoadsuccess = True
     for replaceFile in needRepalceFile:
+        errorOccurred.sigNormal.emit("正在下载" + replaceFile)
         destPath = tempPath + "\\" + replaceFile
         replaceFileUrl = replaceFile.replace("\\","/")
         Url = baseUrlAddress + replaceFileUrl
@@ -281,15 +278,16 @@ def down_load_file(needRepalceFile:list,needAddFile:list,baseUrlAddress = "https
             with open(destPath, "wb") as code:
                 code.write(downLoad.content)
                 code.close()
+                errorOccurred.sigNormal.emit("成功下载" + replaceFile)
         except Exception as e:
             downLoadsuccess  = False
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close()
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigDownLoadFileError.emit(destPath)
+            errorOccurred.sigError.emit(destPath)
             return  downLoadsuccess    
     for addFile in needAddFile:
+        errorOccurred.sigNormal.emit("正在下载" + addFile)
         destPath1 = tempPath + "\\" + addFile
         addFileUrl = addFile.replace("\\","/")
         Url1 = baseUrlAddress + addFileUrl 
@@ -299,13 +297,13 @@ def down_load_file(needRepalceFile:list,needAddFile:list,baseUrlAddress = "https
             with open(destPath1, "wb") as code1:
                 code1.write(downLoad1.content)
                 code1.close() 
+                errorOccurred.sigNormal.emit("成功下载" + addFile)
         except Exception as e:
             downLoadsuccess  = False
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close()
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigDownLoadFileError.emit(destPath1)
+            errorOccurred.sigError.emit(destPath1)
             return downLoadsuccess
     return downLoadsuccess
 
@@ -326,31 +324,33 @@ def remove_file_to_destpath(needReplaceFile:list,needAddFile:list)->bool:
     currPath = currPath.strip("EPEDAPro")
     #currPath = currPath + "\\EPEDAPro"
     for replaceFile in needReplaceFile:
+        errorOccurred.sigNormal.emit("正在更新" + replaceFile)
         soucreReplaceFilePath = tempPath + "\\" + replaceFile
         replacePath = currPath + "\\" + replaceFile
         try:
             os.remove(replacePath)
             shutil.move(soucreReplaceFilePath,replacePath)
+            errorOccurred.sigNormal.emit("成功更新" + replaceFile)
         except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close()  
             moveFileSuccess = False 
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigRemoveFileError.emit(replacePath)
+            errorOccurred.sigError.emit("更新失败,热修文件无法替换,即将退出热修")
             return moveFileSuccess
     for addFile in needAddFile:
+        errorOccurred.sigNormal.emit("正在更新" + addFile)
         addPath = currPath + "\\" + addFile  
         sourceAddFilePath = tempPath + "\\" + addFile
         try:
             shutil.move(sourceAddFilePath,addPath)
+            errorOccurred.sigNormal.emit("成功更新" + addFile)
         except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close()  
             moveFileSuccess  = False  
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigRemoveFileError.emit(addPath)
+            errorOccurred.sigError.emit("更新失败,热修文件无法替换,即将退出热修")
             return moveFileSuccess
     return moveFileSuccess
      
@@ -361,18 +361,19 @@ def delete_temp_folder()->bool:
     Returns:
         bool: 删除成功返回true，失败返回false
     """
+    errorOccurred.sigNormal.emit("正在清理冗余文件")
     currentPath = os.getcwd()
     tempPath = currentPath + "\\Temp"
     try:
         if os.path.exists(tempPath):
-            shutil.rmtree(tempPath)
+            shutil.rmtree(tempPath)   
+        errorOccurred.sigNormal.emit("成功清理冗余文件")     
         return True    
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close() 
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigDeleteTempError.emit("删除本地Temp文件夹失败")
+            errorOccurred.sigError.emit("冗余文件Temp无法删除,存在冗余文件,即将退出热修")
     return False
 
 
@@ -382,17 +383,18 @@ def create_temp_folder()->bool:
     Returns:
         bool: 创建成功返回True，失败返回False
     """
+    errorOccurred.sigNormal.emit("正在创建热修缓存文件目录")
     currentPath = os.getcwd()
     tempPath = currentPath + "\\Temp"
     try:
         os.makedirs(tempPath)
+        errorOccurred.sigNormal.emit("成功创建目录")
         return True
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close()
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigCreateTempError.emit("创建Temp文件夹失败")
+            errorOccurred.sigError.emit("缓存目录无法创建,热修文件目录不存在,即将退出热修")
     return False    
 
 
@@ -405,6 +407,8 @@ def down_load_oss_checkList(checkListTXtName = "\\edaCheckList.txt")->bool:
     Returns:
         bool: 下载成功返回True，下载失败返回False
     """
+    txtname = checkListTXtName.strip("\\")
+    errorOccurred.sigNormal.emit("正在下载"+ txtname)
     url = "https://edahotfix.oss-cn-hangzhou.aliyuncs.com/edaCheckList.txt"
     currentPath = os.getcwd()
     updateTempPath = currentPath + "\\updateTemp"
@@ -412,13 +416,13 @@ def down_load_oss_checkList(checkListTXtName = "\\edaCheckList.txt")->bool:
         down_res = requests.get(url)
         with open(updateTempPath + checkListTXtName,'wb') as file:
             file.write(down_res.content)
+        errorOccurred.sigNormal.emit("成功下载" + txtname)    
         return True    
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close()
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigDownLoadCheckListError.emit("下载标准比对文件失败")
+            errorOccurred.sigError.emit("下载标准比对文件失败")
     return False   
 
 
@@ -428,18 +432,19 @@ def delete_updateTemp_folder()->bool:
     Returns:
         bool: 删除成功返回True，失败返回False
     """
+    errorOccurred.sigNormal.emit("正在清理冗余文件")
     currentPath = os.getcwd()
     updateTempPath = currentPath + "\\updateTemp"
     try:
         if os.path.exists(updateTempPath):
             shutil.rmtree(updateTempPath)
+        errorOccurred.sigNormal.emit("成功清理冗余文件")    
         return True    
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close() 
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigDeleteUpdatetempError.emit("删除updateTemp文件夹失败")
+            errorOccurred.sigError.emit("冗余文件updateTemp无法删除,存在冗余文件,即将退出热修")
     return False
 
 
@@ -449,17 +454,18 @@ def create_updateTemp_folder()->bool:
     Returns:
         bool: 创建成功返回True，失败返回False
     """
+    errorOccurred.sigNormal.emit("正在创建热修缓存文件目录")
     currentPath = os.getcwd()
     updateTempPath = currentPath + "\\updateTemp"
     try:
         os.makedirs(updateTempPath)
+        errorOccurred.sigNormal.emit("成功创建目录")
         return True
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close()
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigCreateUpdatetempError.emit("创建updateTemp文件夹失败")
+            errorOccurred.sigError.emit("缓存目录无法创建,热修文件目录不存在,即将退出热修")
     return False   
 
 
@@ -472,6 +478,7 @@ def judge_file_writable(replaceList:list)->bool:
     Returns:
         bool: 所有文件当前都可写返回True,有一个不可写就返回False
     """
+    errorOccurred.sigNormal.emit("正在获取文件替换权限")
     allFileWritAble = True
     for replaceFile in replaceList:
         currPath = os.getcwd()
@@ -487,15 +494,15 @@ def judge_file_writable(replaceList:list)->bool:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
             updatelog.close()
-            errorOccurred = ExceptionOccurred()
-            errorOccurred.sigJudgeFileWritableError.emit("创建updateTemp文件夹失败")
+            errorOccurred.sigError.emit("获取文件替换权限失败,热修文件无法替换,即将退出热修")
             allFileWritAble = False
             return allFileWritAble
+    errorOccurred.sigNormal.emit("成功获取文件替换权限")        
     return allFileWritAble        
 
         
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # #删除本地updateTemp文件夹
     # delUpdateTemp = delete_updateTemp_folder() 
     # #创建updateTemp文件夹
@@ -519,7 +526,3 @@ if __name__ == '__main__':
     # # dowmLoadFileResult = down_load_file(needAddFileList,needAddFileList)
     # # #移动下载的文件到相应位置
     # # removeFileResult = remove_file_to_destpath(needAddFileList,needAddFileList)
-
-
-
-
