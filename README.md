@@ -54,6 +54,15 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 删除line4297,文件夹及文件数量4703
 20221101
 在4640行后增加|--CAMFliow2.py 文件夹及文件数量4704
+20221108
+在338行后增加|--export_inputParamsImg.png
+154行后增加连续四行
+|--tabButton_open_uncheck.png
+|--tabButton_open_checkedFocus.png
+|--tabButton_close_uncheck.png
+|--tabButton_close_checkedFocus.png
+115行后增加|--exportSecondaryTab.qss
+文件夹及文件总数4710
 
 ========================================================================================
 SDK index
