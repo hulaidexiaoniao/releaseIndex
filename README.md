@@ -63,6 +63,8 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--tabButton_close_checkedFocus.png
 115行后增加|--exportSecondaryTab.qss
 文件夹及文件总数4710
+20221108
+388行后增加Inter-Regular-9.otf 文件夹及文件总数4711
 
 ========================================================================================
 SDK index
