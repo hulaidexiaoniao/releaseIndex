@@ -54,6 +54,17 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 删除line4297,文件夹及文件数量4703
 20221101
 在4640行后增加|--CAMFliow2.py 文件夹及文件数量4704
+20221108
+在338行后增加|--export_inputParamsImg.png
+154行后增加连续四行
+|--tabButton_open_uncheck.png
+|--tabButton_open_checkedFocus.png
+|--tabButton_close_uncheck.png
+|--tabButton_close_checkedFocus.png
+115行后增加|--exportSecondaryTab.qss
+文件夹及文件总数4710
+20221108
+388行后增加Inter-Regular-9.otf 文件夹及文件总数4711
 
 ========================================================================================
 SDK index
@@ -82,6 +93,17 @@ SDK index
 line10后插入添加 travelerModule.dll，文件夹及文件数量369
 删除line287
 删除line133，文件夹及文件数量367
+272行后增加export_inputParamsImg.png 
+88行后增加连续四行
+|--tabButton_open_uncheck.png
+|--tabButton_open_checkedFocus.png
+|--tabButton_close_uncheck.png
+|--tabButton_close_checkedFocus.png
+51行后增加|--exportSecondaryTab.qss  文件夹及文件数量373
+20221108
+322行后增加Inter-Regular-9.otf 文件夹及文件数量374
+
+
 
 ========================================================================================
 epkernel bin

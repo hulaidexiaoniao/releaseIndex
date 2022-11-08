@@ -49,6 +49,7 @@
                      |--importFailedDialog.qss
                      |--headerAndLittleicon.qss
                      |--factoryRegulationsModule.qss
+                     |--exportSecondaryTab.qss
                      |--exportModule.qss
                      |--eqModule.qss
                      |--eqEditView.qss
@@ -86,6 +87,10 @@
                      |--Vector.png
                      |--Up_arrow.png
                      |--tishi.png
+                     |--tabButton_open_uncheck.png
+                     |--tabButton_open_checkedFocus.png
+                     |--tabButton_close_uncheck.png
+                     |--tabButton_close_checkedFocus.png
                      |--sync_drill_icon.png
                      |--switch_on.png
                      |--sRectangle.png
@@ -270,6 +275,7 @@
                      |--factoryRegulations_normal.png
                      |--factoryRegulations_add.png
                      |--export_success.png
+                     |--export_inputParamsImg.png
                      |--export_failed.png
                      |--eq_goBack.png
                      |--eq_deleteImg.png
@@ -314,6 +320,7 @@
                      |--arrowlater.png
                      |--arrowheaa.png
                   |--font
+                     |--Inter-Regular-9.otf
                      |--Alibaba-PuHuiTi-Regular.ttf
                      |--Alibaba-PuHuiTi-Medium.ttf
                      |--Alibaba-PuHuiTi-Light.ttf

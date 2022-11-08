@@ -1,5 +1,5 @@
 from logging import exception
-import os,requests, sys
+import os,requests
 
 import shutil
 import os,hashlib
@@ -20,6 +20,7 @@ updateTempPath = currentPath + "\\updateTemp"
 class ExceptionOccurred(QObject):
     sigError = pyqtSignal(str)
     sigNormal = pyqtSignal(str)
+    sigSuccess = pyqtSignal(str)
     def __init__(self):
         super().__init__()
 
@@ -160,7 +161,7 @@ def getLocalFileInfo(basePath = os.getcwd(),localTxtName = currentPath + "\\upda
 
     txtPath = show_path(base_path_tree,localTxtName)
     if os.path.exists(txtPath):
-        errorOccurred.sigNormal.emit("成功生成localCheckList.txt")
+        errorOccurred.sigSuccess.emit("成功生成localCheckList.txt")
         return True
     else:
         return False
@@ -185,7 +186,7 @@ def data_compare(keyValueDic1:dict,keyValueDic2:dict)->list:
         for differFile in diff_vals:
             ss = differFile[0]
             needReplaceList.append(ss)
-        errorOccurred.sigNormal.emit("成功比对差异")    
+        errorOccurred.sigSuccess.emit("成功比对差异")    
         return needReplaceList
     except Exception as e:
         updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
@@ -212,7 +213,7 @@ def get_add_file(keyValueDic1:dict,keyValueDic2:dict)->list:
         needAddFile = keyValueDic1.keys()-keyValueDic2.keys()
         #print(needAddFile)
         needAddFile = list(needAddFile)
-        errorOccurred.sigNormal.emit("成功比对增量")
+        errorOccurred.sigSuccess.emit("成功比对增量")
         return needAddFile
     except Exception as e:
         updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
@@ -245,8 +246,10 @@ def txt_parse(txtPath:str)->dict:
             line = line.strip("\n")
             strList = line.split("---")
             #print(str)
+            if(strList[1] == ""):
+                continue
             keyValueDic[strList[0]] = strList[1]
-        errorOccurred.sigNormal.emit("加载成功")        
+        errorOccurred.sigSuccess.emit("加载成功")        
     except Exception as e:
         updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
         updatelog.write(str(e))
@@ -278,7 +281,7 @@ def down_load_file(needRepalceFile:list,needAddFile:list,baseUrlAddress = "https
             with open(destPath, "wb") as code:
                 code.write(downLoad.content)
                 code.close()
-                errorOccurred.sigNormal.emit("成功下载" + replaceFile)
+                errorOccurred.sigSuccess.emit("成功下载" + replaceFile)
         except Exception as e:
             downLoadsuccess  = False
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
@@ -297,7 +300,7 @@ def down_load_file(needRepalceFile:list,needAddFile:list,baseUrlAddress = "https
             with open(destPath1, "wb") as code1:
                 code1.write(downLoad1.content)
                 code1.close() 
-                errorOccurred.sigNormal.emit("成功下载" + addFile)
+                errorOccurred.sigSuccess.emit("成功下载" + addFile)
         except Exception as e:
             downLoadsuccess  = False
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
@@ -330,7 +333,7 @@ def remove_file_to_destpath(needReplaceFile:list,needAddFile:list)->bool:
         try:
             os.remove(replacePath)
             shutil.move(soucreReplaceFilePath,replacePath)
-            errorOccurred.sigNormal.emit("成功更新" + replaceFile)
+            errorOccurred.sigSuccess.emit("成功更新" + replaceFile)
         except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
@@ -344,7 +347,7 @@ def remove_file_to_destpath(needReplaceFile:list,needAddFile:list)->bool:
         sourceAddFilePath = tempPath + "\\" + addFile
         try:
             shutil.move(sourceAddFilePath,addPath)
-            errorOccurred.sigNormal.emit("成功更新" + addFile)
+            errorOccurred.sigSuccess.emit("成功更新" + addFile)
         except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
             updatelog.write(str(e))
@@ -367,7 +370,7 @@ def delete_temp_folder()->bool:
     try:
         if os.path.exists(tempPath):
             shutil.rmtree(tempPath)   
-        errorOccurred.sigNormal.emit("成功清理冗余文件")     
+        errorOccurred.sigSuccess.emit("成功清理冗余文件")     
         return True    
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
@@ -388,7 +391,7 @@ def create_temp_folder()->bool:
     tempPath = currentPath + "\\Temp"
     try:
         os.makedirs(tempPath)
-        errorOccurred.sigNormal.emit("成功创建目录")
+        errorOccurred.sigSuccess.emit("成功创建目录")
         return True
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
@@ -416,7 +419,8 @@ def down_load_oss_checkList(checkListTXtName = "\\edaCheckList.txt")->bool:
         down_res = requests.get(url)
         with open(updateTempPath + checkListTXtName,'wb') as file:
             file.write(down_res.content)
-        errorOccurred.sigNormal.emit("成功下载" + txtname)    
+            file.close
+        errorOccurred.sigSuccess.emit("成功下载" + txtname)    
         return True    
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
@@ -438,7 +442,7 @@ def delete_updateTemp_folder()->bool:
     try:
         if os.path.exists(updateTempPath):
             shutil.rmtree(updateTempPath)
-        errorOccurred.sigNormal.emit("成功清理冗余文件")    
+        errorOccurred.sigSuccess.emit("成功清理冗余文件")    
         return True    
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
@@ -459,7 +463,7 @@ def create_updateTemp_folder()->bool:
     updateTempPath = currentPath + "\\updateTemp"
     try:
         os.makedirs(updateTempPath)
-        errorOccurred.sigNormal.emit("成功创建目录")
+        errorOccurred.sigSuccess.emit("成功创建目录")
         return True
     except Exception as e:
             updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
@@ -497,12 +501,12 @@ def judge_file_writable(replaceList:list)->bool:
             errorOccurred.sigError.emit("获取文件替换权限失败,热修文件无法替换,即将退出热修")
             allFileWritAble = False
             return allFileWritAble
-    errorOccurred.sigNormal.emit("成功获取文件替换权限")        
+    errorOccurred.sigSuccess.emit("成功获取文件替换权限")        
     return allFileWritAble        
 
         
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
     # #删除本地updateTemp文件夹
     # delUpdateTemp = delete_updateTemp_folder() 
     # #创建updateTemp文件夹
@@ -515,14 +519,14 @@ def judge_file_writable(replaceList:list)->bool:
     # loadCheckList = down_load_oss_checkList()
     # #把本地路径写成txt
     # generatelocaltxt = getLocalFileInfo()
-    # #解析两份txt文件为dic
-    # standardCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\edaCheckList.txt")
-    # localCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\localtree.txt")
-    # #获取需要替换的文件列表
-    # needReplaceFileList = data_compare(standardCheckList,localCheckList)
-    # #获取需要增加的文件列表
-    # needAddFileList = get_add_file(standardCheckList,localCheckList)
-    # #下载所有需要的文件
-    # # dowmLoadFileResult = down_load_file(needAddFileList,needAddFileList)
-    # # #移动下载的文件到相应位置
-    # # removeFileResult = remove_file_to_destpath(needAddFileList,needAddFileList)
+    #解析两份txt文件为dic
+    standardCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\edaCheckList.txt")
+    localCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\localtree.txt")
+    #获取需要替换的文件列表
+    needReplaceFileList = data_compare(standardCheckList,localCheckList)
+    #获取需要增加的文件列表
+    needAddFileList = get_add_file(standardCheckList,localCheckList)
+    #下载所有需要的文件
+    dowmLoadFileResult = down_load_file(needReplaceFileList,needAddFileList)
+    #移动下载的文件到相应位置
+    removeFileResult = remove_file_to_destpath(needReplaceFileList,needAddFileList)
