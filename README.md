@@ -98,6 +98,8 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--tabButton_close_uncheck.png
 |--tabButton_close_checkedFocus.png
 51行后增加|--exportSecondaryTab.qss  文件夹及文件数量373
+20221108
+322行后增加Inter-Regular-9.otf 文件夹及文件数量374
 
 
 
