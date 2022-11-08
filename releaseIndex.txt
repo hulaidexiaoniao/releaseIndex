@@ -113,6 +113,7 @@
                         |--importFailedDialog.qss
                         |--headerAndLittleicon.qss
                         |--factoryRegulationsModule.qss
+                        |--exportSecondaryTab.qss
                         |--exportModule.qss
                         |--eqModule.qss
                         |--eqEditView.qss
@@ -152,6 +153,10 @@
                         |--Vector.png
                         |--Up_arrow.png
                         |--tishi.png
+                        |--tabButton_open_uncheck.png
+                        |--tabButton_open_checkedFocus.png
+                        |--tabButton_close_uncheck.png
+                        |--tabButton_close_checkedFocus.png
                         |--sync_drill_icon.png
                         |--switch_on.png
                         |--sRectangle.png
@@ -336,6 +341,7 @@
                         |--factoryRegulations_normal.png
                         |--factoryRegulations_add.png
                         |--export_success.png
+                        |--export_inputParamsImg.png
                         |--export_failed.png
                         |--eq_goBack.png
                         |--eq_deleteImg.png
@@ -4637,8 +4643,8 @@
                         |--drill_resize.py
                         |--drill_process.py
                         |--drill_classify.py
-                        |--CAMFliow.py
                         |--CAMFliow2.py
+                        |--CAMFliow.py
                      |--base
                         |--__pycache__
                            |--UILib.cpython-37.pyc
