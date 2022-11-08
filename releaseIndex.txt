@@ -386,6 +386,7 @@
                         |--arrowlater.png
                         |--arrowheaa.png
                      |--font
+                        |--Inter-Regular-9.otf
                         |--Alibaba-PuHuiTi-Regular.ttf
                         |--Alibaba-PuHuiTi-Medium.ttf
                         |--Alibaba-PuHuiTi-Light.ttf
