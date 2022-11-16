@@ -11,8 +11,9 @@ fileRelativePath = ""
 filePathList = []
 filePathList.append("")
 
-base_path = os.getcwd()
-currentPath = os.getcwd()
+
+currentPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
+base_path =  os.path.dirname(currentPath)
 tempPath = currentPath + "\\Temp"
 updateTempPath = currentPath + "\\updateTemp"
 
@@ -42,12 +43,12 @@ def get_path(path, path_tree, is_need_file=False, max_level=1):
     # print (is_need_file)
     if path_tree.level == max_level:
         return
-
     if os.path.isdir(path):
 
         for current_dir in os.listdir(path):
 
             full_path = os.path.join(path, current_dir)
+        
             if os.path.isfile(full_path) and is_need_file:
                 sub_path_tree = PathTree(current_dir, path_tree.level + 1,full_path)
                 path_tree.add_sub(sub_path_tree)
@@ -79,7 +80,7 @@ def get_spe_str_by_level(sep_str:str, level:int)->str:
 
 
 def dsf_show(path_tree,localTxtName)->str:
-    currentPath = os.getcwd()
+    currentPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
     updateTempPath = currentPath + "\\updateTemp"
     keyValueList = []
     q = LifoQueue()
@@ -141,7 +142,7 @@ def check_param(path:str, need_file:int):
     return ''
 
 
-def getLocalFileInfo(basePath = os.getcwd(),localTxtName = currentPath + "\\updateTemp" + '\\localCheckList.txt')->bool:
+def getLocalFileInfo(base_path = os.path.join(os.path.dirname(os.path.realpath(__file__))),localTxtName = currentPath + "\\updateTemp" + '\\localCheckList.txt')->bool:
     """输入本地项目地址，生成一份用于对照的文本
 
     Args:
@@ -151,13 +152,15 @@ def getLocalFileInfo(basePath = os.getcwd(),localTxtName = currentPath + "\\upda
     Returns:
         bool: 生成成功或失败
     """
-    errorOccurred.sigNormal.emit("正在生成localCheckList.txt")
-    if os.path.exists(basePath):
-       basePath = basePath
+    errorOccurred.sigNormal.emit("         正在生成localCheckList.txt")
+    #base_path = os.path.dirname(base_path)
+    if os.path.exists(base_path):
+       base_path = base_path
     else:
         return False 
-    base_path_tree = PathTree(basePath, 3)
-    get_path(basePath, base_path_tree, True)
+
+    base_path_tree = PathTree(base_path, 3)
+    get_path(base_path, base_path_tree, True)
 
     txtPath = show_path(base_path_tree,localTxtName)
     if os.path.exists(txtPath):
@@ -165,6 +168,35 @@ def getLocalFileInfo(basePath = os.getcwd(),localTxtName = currentPath + "\\upda
         return True
     else:
         return False
+
+
+def data_compare2(keyValueDic1:dict,keyValueDic2:dict)->dict:
+    errorOccurred.sigNormal.emit("         正在比对差异与增量")
+    needReplaceList = []
+    needAddFile = []
+    f1=open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'updateTemp\\replaceCheckList.txt'),'w+',encoding='utf-8')
+    f2=open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'updateTemp\\addCheckList.txt'),'w+',encoding='utf-8')
+    try:
+        for key in keyValueDic1:
+            if key in keyValueDic2:
+                if not keyValueDic1[key] == keyValueDic2[key]:
+                    needReplaceList.append(key)
+                    f1.write(key + '\n')
+            else:
+                needAddFile.append(key)
+                f2.write(key + '\n')
+        f1.close()
+        f2.close()
+        errorOccurred.sigSuccess.emit("成功比对差异与增量")    
+        return {'replace' : needReplaceList, 'add' : needAddFile}
+    except Exception as e:
+        f1.close()
+        f2.close()
+        updatelog = open(updateTempPath + "\\updata.log",'a', encoding='UTF-8') 
+        updatelog.write(str(e))
+        updatelog.close() 
+        errorOccurred.sigError.emit("比对失败,无法比对校验数据,即将退出热修")
+    return {'replace' : needReplaceList, 'add' : needAddFile}
 
 
 def data_compare(keyValueDic1:dict,keyValueDic2:dict)->list:
@@ -177,10 +209,10 @@ def data_compare(keyValueDic1:dict,keyValueDic2:dict)->list:
     Returns:
         list: 返回的有差异的文件列表，存储文件相对路径
     """
-    errorOccurred.sigNormal.emit("正在比对差异")
+    errorOccurred.sigNormal.emit("         正在比对差异")
     needReplaceList = []
     try:
-        diff = keyValueDic1.keys() &  keyValueDic2
+        diff = keyValueDic1.keys() &  keyValueDic2.keys()
         diff_vals = [(k, keyValueDic1[k], keyValueDic2[k]) for k in diff if keyValueDic1[k] != keyValueDic2[k]] 
         #print(diff_vals)
         for differFile in diff_vals:
@@ -207,10 +239,12 @@ def get_add_file(keyValueDic1:dict,keyValueDic2:dict)->list:
     Returns:
         list: 需要增加的文件相对路径列表
     """
-    errorOccurred.sigNormal.emit("正在比对增量")
+    errorOccurred.sigNormal.emit("         正在比对增量")
     needAddFile = []
     try:
-        needAddFile = keyValueDic1.keys()-keyValueDic2.keys()
+        bbb = keyValueDic1.keys()
+        ccc = keyValueDic2.keys()
+        needAddFile = keyValueDic1.keys() - keyValueDic2.keys()
         #print(needAddFile)
         needAddFile = list(needAddFile)
         errorOccurred.sigSuccess.emit("成功比对增量")
@@ -232,7 +266,7 @@ def txt_parse(txtPath:str)->dict:
     Returns:
         dict: 生成的字典
     """
-    errorOccurred.sigNormal.emit("正在加载文件校验表")
+    errorOccurred.sigNormal.emit("         正在加载文件校验表")
     keyValueDic = {}
     if os.path.exists(txtPath) == False or txtPath == None:
         errorOccurred.sigError.emit("加载文件校验表失败,无法读取文件校验数据,即将退出热修") 
@@ -258,7 +292,7 @@ def txt_parse(txtPath:str)->dict:
     return keyValueDic
 
 
-def down_load_file(needRepalceFile:list,needAddFile:list,baseUrlAddress = "https://edahotfix.oss-cn-hangzhou.aliyuncs.com/EPEDAPro/")->bool:
+def down_load_file(needRepalceFile:list,needAddFile:list,baseUrlAddress = "https://edahotfix.oss-cn-hangzhou.aliyuncs.com/file/EPEDAPro/")->bool:
     """下载需要增加与替换的文件
 
     Args:
@@ -271,7 +305,7 @@ def down_load_file(needRepalceFile:list,needAddFile:list,baseUrlAddress = "https
     """
     downLoadsuccess = True
     for replaceFile in needRepalceFile:
-        errorOccurred.sigNormal.emit("正在下载" + replaceFile)
+        errorOccurred.sigNormal.emit("         正在下载" + replaceFile)
         destPath = tempPath + "\\" + replaceFile
         replaceFileUrl = replaceFile.replace("\\","/")
         Url = baseUrlAddress + replaceFileUrl
@@ -290,7 +324,7 @@ def down_load_file(needRepalceFile:list,needAddFile:list,baseUrlAddress = "https
             errorOccurred.sigError.emit(destPath)
             return  downLoadsuccess    
     for addFile in needAddFile:
-        errorOccurred.sigNormal.emit("正在下载" + addFile)
+        errorOccurred.sigNormal.emit("         正在下载" + addFile)
         destPath1 = tempPath + "\\" + addFile
         addFileUrl = addFile.replace("\\","/")
         Url1 = baseUrlAddress + addFileUrl 
@@ -323,11 +357,11 @@ def remove_file_to_destpath(needReplaceFile:list,needAddFile:list)->bool:
         bool: 移动文件全部成功返回True,有一个不成功返回False
     """
     moveFileSuccess = True
-    currPath = os.getcwd()
-    currPath = currPath.strip("EPEDAPro")
+    currPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
+    currPath = os.path.dirname(currPath)
     #currPath = currPath + "\\EPEDAPro"
     for replaceFile in needReplaceFile:
-        errorOccurred.sigNormal.emit("正在更新" + replaceFile)
+        errorOccurred.sigNormal.emit("         正在更新" + replaceFile)
         soucreReplaceFilePath = tempPath + "\\" + replaceFile
         replacePath = currPath + "\\" + replaceFile
         try:
@@ -342,10 +376,13 @@ def remove_file_to_destpath(needReplaceFile:list,needAddFile:list)->bool:
             errorOccurred.sigError.emit("更新失败,热修文件无法替换,即将退出热修")
             return moveFileSuccess
     for addFile in needAddFile:
-        errorOccurred.sigNormal.emit("正在更新" + addFile)
+        errorOccurred.sigNormal.emit("         正在更新" + addFile)
         addPath = currPath + "\\" + addFile  
         sourceAddFilePath = tempPath + "\\" + addFile
         try:
+            addPathDir = "\\".join(addPath.split("\\")[:-1])
+            if not os.path.exists(addPathDir):
+                os.makedirs(addPathDir)
             shutil.move(sourceAddFilePath,addPath)
             errorOccurred.sigSuccess.emit("成功更新" + addFile)
         except Exception as e:
@@ -364,8 +401,8 @@ def delete_temp_folder()->bool:
     Returns:
         bool: 删除成功返回true，失败返回false
     """
-    errorOccurred.sigNormal.emit("正在清理冗余文件")
-    currentPath = os.getcwd()
+    errorOccurred.sigNormal.emit("         正在清理冗余文件")
+    currentPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
     tempPath = currentPath + "\\Temp"
     try:
         if os.path.exists(tempPath):
@@ -386,8 +423,8 @@ def create_temp_folder()->bool:
     Returns:
         bool: 创建成功返回True，失败返回False
     """
-    errorOccurred.sigNormal.emit("正在创建热修缓存文件目录")
-    currentPath = os.getcwd()
+    errorOccurred.sigNormal.emit("         正在创建热修缓存文件目录")
+    currentPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
     tempPath = currentPath + "\\Temp"
     try:
         os.makedirs(tempPath)
@@ -401,7 +438,7 @@ def create_temp_folder()->bool:
     return False    
 
 
-def down_load_oss_checkList(checkListTXtName = "\\edaCheckList.txt")->bool:
+def down_load_oss_checkList(url:str,checkListTXtName = "\\edaCheckList.txt")->bool:
     """下载标准对比文件
 
     Args:
@@ -411,9 +448,8 @@ def down_load_oss_checkList(checkListTXtName = "\\edaCheckList.txt")->bool:
         bool: 下载成功返回True，下载失败返回False
     """
     txtname = checkListTXtName.strip("\\")
-    errorOccurred.sigNormal.emit("正在下载"+ txtname)
-    url = "https://edahotfix.oss-cn-hangzhou.aliyuncs.com/edaCheckList.txt"
-    currentPath = os.getcwd()
+    errorOccurred.sigNormal.emit("         正在下载"+ txtname)
+    currentPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
     updateTempPath = currentPath + "\\updateTemp"
     try:
         down_res = requests.get(url)
@@ -436,8 +472,8 @@ def delete_updateTemp_folder()->bool:
     Returns:
         bool: 删除成功返回True，失败返回False
     """
-    errorOccurred.sigNormal.emit("正在清理冗余文件")
-    currentPath = os.getcwd()
+    errorOccurred.sigNormal.emit("         正在清理冗余文件")
+    currentPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
     updateTempPath = currentPath + "\\updateTemp"
     try:
         if os.path.exists(updateTempPath):
@@ -458,8 +494,8 @@ def create_updateTemp_folder()->bool:
     Returns:
         bool: 创建成功返回True，失败返回False
     """
-    errorOccurred.sigNormal.emit("正在创建热修缓存文件目录")
-    currentPath = os.getcwd()
+    errorOccurred.sigNormal.emit("         正在创建热修缓存文件目录")
+    currentPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
     updateTempPath = currentPath + "\\updateTemp"
     try:
         os.makedirs(updateTempPath)
@@ -482,11 +518,11 @@ def judge_file_writable(replaceList:list)->bool:
     Returns:
         bool: 所有文件当前都可写返回True,有一个不可写就返回False
     """
-    errorOccurred.sigNormal.emit("正在获取文件替换权限")
+    errorOccurred.sigNormal.emit("         正在获取文件替换权限")
     allFileWritAble = True
     for replaceFile in replaceList:
-        currPath = os.getcwd()
-        currPath = currPath.strip("EPEDAPro")
+        currPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
+        currPath = os.path.dirname(currPath)
         replaceFilePath = currPath + "\\" + replaceFile
         try:
             if os.access(replaceFilePath,os.W_OK):
@@ -517,15 +553,18 @@ if __name__ == '__main__':
     # createTemp = create_temp_folder()
     # #下载checkList
     # loadCheckList = down_load_oss_checkList()
-    # #把本地路径写成txt
-    # generatelocaltxt = getLocalFileInfo()
+    #把本地路径写成txt
+    generatelocaltxt = getLocalFileInfo()
     #解析两份txt文件为dic
-    standardCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\edaCheckList.txt")
-    localCheckList = txt_parse(r"C:\Users\wulongan\Desktop\python--\EPEDAPro_1028\EPEDAPro\updateTemp\localtree.txt")
-    #获取需要替换的文件列表
-    needReplaceFileList = data_compare(standardCheckList,localCheckList)
-    #获取需要增加的文件列表
-    needAddFileList = get_add_file(standardCheckList,localCheckList)
+    standardCheckList = txt_parse(r"C:\Users\xumingqi\Desktop\EPEDAPro\updateTemp\edaCheckList.txt")
+    localCheckList = txt_parse(r"C:\Users\xumingqi\Desktop\EPEDAPro\updateTemp\localCheckList.txt")
+    # #获取需要替换的文件列表
+    # needReplaceFileList = data_compare(standardCheckList,localCheckList)
+    # #获取需要增加的文件列表
+    # needAddFileList = get_add_file(standardCheckList,localCheckList)
+    cc = data_compare2(standardCheckList, localCheckList)
+    needReplaceFileList = cc['replace']
+    needAddFileList = cc['add']
     #下载所有需要的文件
     dowmLoadFileResult = down_load_file(needReplaceFileList,needAddFileList)
     #移动下载的文件到相应位置
