@@ -31,6 +31,7 @@
                      |--noticeInfoWidget.qss
                      |--noticeErrorWidget.qss
                      |--nodeWidget.qss
+                     |--morePluginButton.qss
                      |--menu.qss
                      |--localJobBackUpDetailStyleSelect.qss
                      |--localJobBackUpDetailStyleRename.qss
