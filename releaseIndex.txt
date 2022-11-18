@@ -95,6 +95,7 @@
                      |--noticeInfoWidget.qss
                      |--noticeErrorWidget.qss
                      |--nodeWidget.qss
+                     |--morePluginButton.qss
                      |--menu.qss
                      |--localJobBackUpDetailStyleSelect.qss
                      |--localJobBackUpDetailStyleRename.qss
@@ -509,7 +510,6 @@
                |--Matrix_MenuBar.dll
                |--Matrix.dll
                |--log4cplusU.dll
-               |--log
                |--localJobBackupModule.dll
                |--ListBar_PNList.dll
                |--libprotoc.dll
