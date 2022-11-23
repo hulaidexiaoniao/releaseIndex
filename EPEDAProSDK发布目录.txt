@@ -24,6 +24,7 @@
                      |--settingsModule.qss
                      |--radioButton.qss
                      |--ProgressBar.qss
+                     |--pcbOpenedJobWidget.qss
                      |--panelizationModule.qss
                      |--pagingWidget.qss
                      |--noticeWarningWidget.qss
@@ -113,6 +114,11 @@
                      |--pw_open.png
                      |--pw_close.png
                      |--progressIMG.png
+                     |--PCB_goBack.png
+                     |--PCB_createSheet_normal.png
+                     |--panelizationPCB_tipsIcon.png
+                     |--panelizationPCB_inputSheet_edit.png
+                     |--panelizationPCB_inputSheet_delete.png
                      |--pagingWidget_next.png
                      |--pagingWidget_last.png
                      |--pageEmpty.png
@@ -126,6 +132,8 @@
                      |--nextStep.png
                      |--more_defuat.png
                      |--moreq.png
+                     |--morePlugins.png
+                     |--moreBtn.png
                      |--More.png
                      |--min.png
                      |--message_success.png
@@ -355,6 +363,7 @@
                |--factoryRegulationsModule.dll
                |--factory.json
                |--exportModule.dll
+               |--epedapro_zh.qm
                |--EPEDAPro.exe
                |--drillAnalysisModule.dll
                |--dfmAnalysisModule.dll
