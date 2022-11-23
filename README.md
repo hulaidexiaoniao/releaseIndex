@@ -69,6 +69,20 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 去掉了ep_python-3.7.3中所有的pyc文件，文件夹及文件总数3420
 20221118
 增加morePluginButton.qss，去掉log文件夹，文件夹及文件总数3420
+20221123
+3195行后增加epedapro_zh.qm
+193行后增加连续两行
+|--morePlugins.png
+|--moreBtn.png
+180行后增加连续五行
+|--PCB_goBack.png
+|--PCB_createSheet_normal.png
+|--panelizationPCB_tipsIcon.png
+|--panelizationPCB_inputSheet_edit.png
+|--panelizationPCB_inputSheet_delete.png
+90行后增加pcbOpenedJobWidget.qss
+共增加9个文件，文件夹及文件总数3429
+
 
 ========================================================================================
 SDK index
@@ -108,6 +122,20 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 322行后增加Inter-Regular-9.otf 文件夹及文件数量374
 20221115
 33行后增加morePluginButton.qss，文件夹及文件总数375
+20221123
+357行后增加epedapro_zh.qm
+128行后增加连续两行
+|--morePlugins.png
+|--moreBtn.png
+115行后增加连续五行
+|--PCB_goBack.png
+|--PCB_createSheet_normal.png
+|--panelizationPCB_tipsIcon.png
+|--panelizationPCB_inputSheet_edit.png
+|--panelizationPCB_inputSheet_delete.png
+26行后增加pcbOpenedJobWidget.qss
+共增加9个文件，文件夹及文件总数384
+
 
 
 
