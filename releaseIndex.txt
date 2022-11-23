@@ -3201,6 +3201,7 @@
                |--EpsLIB.dll
                |--eplicense.dll
                |--epldkapi.dll
+               |--epedapro_zh.qm
                |--EPEDAPro.exe
                |--EPDMS_CTYPE.dll
                |--EPDMS_API_QT.dll
