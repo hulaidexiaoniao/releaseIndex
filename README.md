@@ -82,6 +82,13 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--panelizationPCB_inputSheet_delete.png
 90行后增加pcbOpenedJobWidget.qss
 共增加9个文件，文件夹及文件总数3429
+20221125
+3270行后增加
+|--Panelization
+  |--FPC.json
+91行后增加|--panelizationPCB.qss
+86行后增加|--softBoardPanelization.qss
+共增加1个文件夹3个文件，文件夹及文件总数3433
 
 
 ========================================================================================
@@ -135,6 +142,13 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--panelizationPCB_inputSheet_delete.png
 26行后增加pcbOpenedJobWidget.qss
 共增加9个文件，文件夹及文件总数384
+20221125
+372行后增加
+|--Panelization
+  |--FPC.json 两行
+27行后增加|--panelizationPCB.qss
+22行后增加|--softBoardPanelization.qss
+共增加一个文件夹3个文件，文件夹及文件总数388
 
 
 
