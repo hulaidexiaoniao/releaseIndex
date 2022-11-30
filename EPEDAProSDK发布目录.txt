@@ -4,7 +4,7 @@
                |--qtwebengine_resources.pak
                |--qtwebengine_devtools_resources.pak
                |--icudtl.dat
-            |--EPEDAPro
+            |--release
                |--WebView.dll
                |--utilToolModule.dll
                |--uiWidgetModule.dll
@@ -20,11 +20,13 @@
                      |--tipsWidget.qss
                      |--stackupMaterialDialog.qss
                      |--stackupImpedance.qss
+                     |--softBoardPanelization.qss
                      |--settingsModule_manager.qss
                      |--settingsModule.qss
                      |--radioButton.qss
                      |--ProgressBar.qss
                      |--pcbOpenedJobWidget.qss
+                     |--panelizationPCB.qss
                      |--panelizationModule.qss
                      |--pagingWidget.qss
                      |--noticeWarningWidget.qss
@@ -45,6 +47,7 @@
                      |--jobInMemoryLargeStyleWidgetRename.qss
                      |--jobInMemoryLargeStyleWidgetDeSelect.qss
                      |--inputViewSourceFile.qss
+                     |--inputAdvancedSetting.qss
                      |--importTipDialog.qss
                      |--importModule.qss
                      |--importFileWidget.qss
@@ -73,6 +76,7 @@
                      |--cellWidget.qss
                      |--camJobVsModule.qss
                      |--calendar.qss
+                     |--boardTableItem.qss
                      |--batchDfmModule.qss
                      |--addFactoryRegulation.qss
                   |--jsonResource
@@ -150,6 +154,12 @@
                      |--line_vertical.png
                      |--jobVs_uploadOK.png
                      |--jobVs_uploadFileIcon.png
+                     |--inputAdvancedSetting_toRight_disabled.png
+                     |--inputAdvancedSetting_toRight.png
+                     |--inputAdvancedSetting_toLeft_disabled.png
+                     |--inputAdvancedSetting_toLeft.png
+                     |--inputAdvancedSetting_exchange_disabled.png
+                     |--inputAdvancedSetting_exchange.png
                      |--import_folder_unChecked.png
                      |--import_folder_checked.png
                      |--importModule_file.png
@@ -337,6 +347,7 @@
                      |--Alibaba-PuHuiTi-B.ttf
                |--regExpValidatorModule.dll
                |--qwebengine_convert_dict.exe
+               |--QtWebEngineProcess.exe
                |--Qt5WebSockets.dll
                |--Qt5WebEngineWidgets.dll
                |--Qt5WebChannel.dll
@@ -345,7 +356,6 @@
                |--Qt5Qml.dll
                |--Qt5PrintSupport.dll
                |--Qt5Positioning.dll
-               |--QtWebEngineProcess.exe
                |--qt.conf
                |--preProcessModule.dll
                |--pluginManager.dll
@@ -370,11 +380,16 @@
                |--debug.log
                |--config
                   |--pluginConfig.json
+                  |--Panelization
+                     |--FPC.json
                   |--keyboard_default.json
                   |--keyBoardjson
                      |--customTamplate1.json
                      |--currentTemplate.txt
                   |--impedance_param.json
+                  |--AutoMatrixConfig
+                     |--MatchRules.json
+                     |--FactoryNames.json
                |--cloudTransferModule.dll
                |--cloudProjectModule.dll
                |--checkUpData

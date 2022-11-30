@@ -84,11 +84,13 @@
                      |--tipsWidget.qss
                      |--stackupMaterialDialog.qss
                      |--stackupImpedance.qss
+                     |--softBoardPanelization.qss
                      |--settingsModule_manager.qss
                      |--settingsModule.qss
                      |--radioButton.qss
                      |--ProgressBar.qss
                      |--pcbOpenedJobWidget.qss
+                     |--panelizationPCB.qss
                      |--panelizationModule.qss
                      |--pagingWidget.qss
                      |--noticeWarningWidget.qss
@@ -109,6 +111,7 @@
                      |--jobInMemoryLargeStyleWidgetRename.qss
                      |--jobInMemoryLargeStyleWidgetDeSelect.qss
                      |--inputViewSourceFile.qss
+                     |--inputAdvancedSetting.qss
                      |--importTipDialog.qss
                      |--importModule.qss
                      |--importFileWidget.qss
@@ -137,6 +140,7 @@
                      |--cellWidget.qss
                      |--camJobVsModule.qss
                      |--calendar.qss
+                     |--boardTableItem.qss
                      |--batchDfmModule.qss
                      |--addFactoryRegulation.qss
                   |--logo.png
@@ -216,6 +220,12 @@
                      |--line_vertical.png
                      |--jobVs_uploadOK.png
                      |--jobVs_uploadFileIcon.png
+                     |--inputAdvancedSetting_toRight_disabled.png
+                     |--inputAdvancedSetting_toRight.png
+                     |--inputAdvancedSetting_toLeft_disabled.png
+                     |--inputAdvancedSetting_toLeft.png
+                     |--inputAdvancedSetting_exchange_disabled.png
+                     |--inputAdvancedSetting_exchange.png
                      |--import_folder_unChecked.png
                      |--import_folder_checked.png
                      |--importModule_file.png
@@ -3268,6 +3278,8 @@
                   |--shortcut_key.json
                   |--server.json
                   |--pluginConfig.json
+                  |--Panelization
+                     |--FPC.json
                   |--keyboard_default.json
                   |--keyBoardjson
                      |--customTamplate1.json
@@ -3286,6 +3298,8 @@
                   |--dms_dbconfig.json
                   |--cammatenodes.json
                   |--AutoMatrixConfig
+                     |--MatchRules.json
+                     |--FactoryNames.json
                      |--ep_default.json
                      |--DefaultTemplate.json
                   |--automatrix.json

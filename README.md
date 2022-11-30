@@ -82,6 +82,27 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--panelizationPCB_inputSheet_delete.png
 90行后增加pcbOpenedJobWidget.qss
 共增加9个文件，文件夹及文件总数3429
+20221125
+3270行后增加
+|--Panelization
+  |--FPC.json
+91行后增加|--panelizationPCB.qss
+86行后增加|--softBoardPanelization.qss
+共增加1个文件夹3个文件，文件夹及文件总数3433
+20221130
+3292行后增加
+|--MatchRules.json
+|--FactoryNames.json
+220行后增加
+|--inputAdvancedSetting_toRight_disabled.png
+|--inputAdvancedSetting_toRight.png
+|--inputAdvancedSetting_toLeft_disabled.png
+|--inputAdvancedSetting_toLeft.png
+|--inputAdvancedSetting_exchange_disabled.png
+|--inputAdvancedSetting_exchange.png
+141行后增加|--boardTableItem.qss
+113行后增加|--inputAdvancedSetting.qss
+共增加10个文件，文件夹及文件总数3443
 
 
 ========================================================================================
@@ -135,6 +156,28 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--panelizationPCB_inputSheet_delete.png
 26行后增加pcbOpenedJobWidget.qss
 共增加9个文件，文件夹及文件总数384
+20221125
+372行后增加
+|--Panelization
+  |--FPC.json 两行
+27行后增加|--panelizationPCB.qss
+22行后增加|--softBoardPanelization.qss
+共增加一个文件夹3个文件，文件夹及文件总数388
+20221130
+381行后增加
+|--AutoMatrixConfig
+  |--MatchRules.json
+  |--FactoryNames.json
+154行后增加
+|--inputAdvancedSetting_toRight_disabled.png
+|--inputAdvancedSetting_toRight.png
+|--inputAdvancedSetting_toLeft_disabled.png
+|--inputAdvancedSetting_toLeft.png
+|--inputAdvancedSetting_exchange_disabled.png
+|--inputAdvancedSetting_exchange.png
+77行后增加 |--boardTableItem.qss
+49行后增加 |--inputAdvancedSetting.qss
+共增加1个文件夹，10个文件，文件夹及文件总数399
 
 
 
