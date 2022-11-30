@@ -89,6 +89,20 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 91行后增加|--panelizationPCB.qss
 86行后增加|--softBoardPanelization.qss
 共增加1个文件夹3个文件，文件夹及文件总数3433
+20221130
+3292行后增加
+|--MatchRules.json
+|--FactoryNames.json
+220行后增加
+|--inputAdvancedSetting_toRight_disabled.png
+|--inputAdvancedSetting_toRight.png
+|--inputAdvancedSetting_toLeft_disabled.png
+|--inputAdvancedSetting_toLeft.png
+|--inputAdvancedSetting_exchange_disabled.png
+|--inputAdvancedSetting_exchange.png
+141行后增加|--boardTableItem.qss
+113行后增加|--inputAdvancedSetting.qss
+共增加10个文件，文件夹及文件总数3443
 
 
 ========================================================================================
