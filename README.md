@@ -103,6 +103,16 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 141行后增加|--boardTableItem.qss
 113行后增加|--inputAdvancedSetting.qss
 共增加10个文件，文件夹及文件总数3443
+20221202
+3394行后增加|--DXF.json
+3391行后增加
+|--DXF
+  |--Orig
+    |--auto_fix_origin.py
+    |--auto_set_profile.py
+    |--import_path.py
+3304行后增加|--DefaultBoardCount.json
+共增加2个文件夹，五个文件，文件夹及文件总数3450
 
 
 ========================================================================================
@@ -178,6 +188,9 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 77行后增加 |--boardTableItem.qss
 49行后增加 |--inputAdvancedSetting.qss
 共增加1个文件夹，10个文件，文件夹及文件总数399
+20221202
+392行后增加|--DefaultBoardCount.json
+文件夹及文件总数400
 
 
 

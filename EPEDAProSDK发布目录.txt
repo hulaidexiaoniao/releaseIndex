@@ -390,6 +390,7 @@
                   |--AutoMatrixConfig
                      |--MatchRules.json
                      |--FactoryNames.json
+                     |--DefaultBoardCount.json
                |--cloudTransferModule.dll
                |--cloudProjectModule.dll
                |--checkUpData
