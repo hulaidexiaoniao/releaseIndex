@@ -178,6 +178,9 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 77行后增加 |--boardTableItem.qss
 49行后增加 |--inputAdvancedSetting.qss
 共增加1个文件夹，10个文件，文件夹及文件总数399
+20221202
+392行后增加|--DefaultBoardCount.json
+文件夹及文件总数400
 
 
 
