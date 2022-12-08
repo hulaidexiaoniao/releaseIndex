@@ -506,6 +506,7 @@
                   |--qoffscreen.dll
                   |--qminimal.dll
                   |--qdirect2d.dll
+               |--pcbSheetSize.ini   
                |--panelSize.ini
                |--panelizationModule.dll
                |--Packet.dll
