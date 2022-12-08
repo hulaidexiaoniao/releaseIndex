@@ -359,6 +359,7 @@
                |--qt.conf
                |--preProcessModule.dll
                |--pluginManager.dll
+               |--pcbSheetSize.ini
                |--panelSize.ini
                |--panelizationModule.dll
                |--output
