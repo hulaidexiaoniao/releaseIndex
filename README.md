@@ -116,6 +116,14 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 20221208
 508行后增加|--pcbSheetSize.ini
 文件夹及文件总数3451
+20221215
+408行后增加两行
+|--Inter.ttf
+|--CooperBlack.ttf
+364行后增加|--eqLink.png
+186行后增加|--pcb_impedanceSettings_back.png
+70行后增加|--startRepair.bat
+文件夹及文件总数3456
 
 
 ========================================================================================
