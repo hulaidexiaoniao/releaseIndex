@@ -10,6 +10,7 @@
                |--uiWidgetModule.dll
                |--travelerModule.dll
                |--syncqt.pl
+               |--startRepair.bat
                |--stackUpImpedanceModule.dll
                |--settingsModule.dll
                |--settings.ini
@@ -118,6 +119,7 @@
                      |--pw_open.png
                      |--pw_close.png
                      |--progressIMG.png
+                     |--pcb_impedanceSettings_back.png
                      |--PCB_goBack.png
                      |--PCB_createSheet_normal.png
                      |--panelizationPCB_tipsIcon.png
@@ -296,6 +298,7 @@
                      |--export_success.png
                      |--export_inputParamsImg.png
                      |--export_failed.png
+                     |--eqLink.png
                      |--eq_goBack.png
                      |--eq_deleteImg.png
                      |--eq_addImg.png
@@ -340,6 +343,8 @@
                      |--arrowheaa.png
                   |--font
                      |--Inter-Regular-9.otf
+                     |--Inter.ttf
+                     |--CooperBlack.ttf
                      |--Alibaba-PuHuiTi-Regular.ttf
                      |--Alibaba-PuHuiTi-Medium.ttf
                      |--Alibaba-PuHuiTi-Light.ttf
