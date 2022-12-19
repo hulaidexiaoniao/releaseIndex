@@ -124,6 +124,10 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 186行后增加|--pcb_impedanceSettings_back.png
 70行后增加|--startRepair.bat
 文件夹及文件总数3456
+20221219
+3278行后增加|--databaseModule.dll
+360行后增加|--fileblue.png
+文件夹及文件总数3456
 
 
 ========================================================================================
