@@ -292,6 +292,7 @@
                      |--headerSort_up_1x.png
                      |--headerSort_1x.png
                      |--guide_nl.png
+                     |--fileblue.png
                      |--file.png
                      |--factoryRegulations_normal.png
                      |--factoryRegulations_add.png
@@ -384,6 +385,7 @@
                |--drillAnalysisModule.dll
                |--dfmAnalysisModule.dll
                |--debug.log
+               |--databaseModule.dll
                |--config
                   |--pluginConfig.json
                   |--Panelization
