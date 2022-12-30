@@ -93,6 +93,8 @@
                      |--Vector1.png
                      |--Vector.png
                      |--Up_arrow.png
+                     |--treeOpen.png
+                     |--treeClose.png
                      |--tishi.png
                      |--tabButton_open_uncheck.png
                      |--tabButton_open_checkedFocus.png
@@ -318,6 +320,10 @@
                      |--drillChecked.png
                      |--DOWNarrow1.png
                      |--downArrow.png
+                     |--dfmRightShow.png
+                     |--dfmLeftShow.png
+                     |--dfmLastShow.png
+                     |--dfmFirstShow.png
                      |--deleteFile.png
                      |--delete1.png
                      |--delete.png
