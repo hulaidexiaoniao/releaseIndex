@@ -17,6 +17,7 @@
                |--resources
                   |--qss
                      |--unitButton.qss
+                     |--treeWidget.qss
                      |--tipsWidgetBlackStyle.qss
                      |--tipsWidget.qss
                      |--stackupMaterialDialog.qss
@@ -372,6 +373,7 @@
                |--preProcessModule.dll
                |--pluginManager.dll
                |--pcbSheetSize.ini
+               |--pcbConfig.ini
                |--panelSize.ini
                |--panelizationModule.dll
                |--output
@@ -389,9 +391,11 @@
                |--epedapro_zh.qm
                |--EPEDAPro.exe
                |--drillAnalysisModule.dll
+               |--dfmDataAnalysis.dll
                |--dfmAnalysisModule.dll
                |--debug.log
                |--databaseModule.dll
+               |--dataAnalysis.ini
                |--config
                   |--pluginConfig.json
                   |--Panelization
