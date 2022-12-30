@@ -231,6 +231,12 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--treeOpen.png
 |--treeClose.png
 文件夹及文件总数414
+20221230
+394行后增加|--dataAnalysis.ini
+391行后增加|--dfmDataAnalysis.dll
+374行后增加|--pcbConfig.ini
+19行后增加|--treeWidget.qss
+文件夹及文件总数418
 
 
 
