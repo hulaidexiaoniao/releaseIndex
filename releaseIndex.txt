@@ -82,6 +82,7 @@
                   |--signal_layer_check
                   |--qss
                      |--unitButton.qss
+                     |--treeWidget.qss
                      |--tipsWidgetBlackStyle.qss
                      |--tipsWidget.qss
                      |--stackupMaterialDialog.qss
