@@ -68,6 +68,7 @@
                   |--compare2.json
                   |--compare.json
                |--syncqt.pl
+               |--symbol_to_svg.dll
                |--startRepair.bat
                |--stackUpImpedanceModule.dll
                |--ssleay32.dll
@@ -519,6 +520,7 @@
                   |--qminimal.dll
                   |--qdirect2d.dll
                |--pcbSheetSize.ini   
+               |--pcbConfig.ini
                |--panelSize.ini
                |--panelizationModule.dll
                |--Packet.dll
@@ -3277,6 +3279,7 @@
                |--DFM_MenuBar_Batch.dll
                |--DFM_Login.dll
                |--DFM_Graphic_AnalysisTab.dll
+               |--dfmDataAnalysis.dll
                |--dfmAnalysisModule.dll
                |--demo.dll
                |--debug.log
@@ -3285,6 +3288,7 @@
                |--DataIOInterface.dll
                |--databaseModule.dll
                |--database.cfg
+               |--dataAnalysis.ini
                |--DAL.dll
                |--cximage.dll
                |--CppUnit64.dll
