@@ -138,6 +138,12 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--treeOpen.png
 |--treeClose.png
 文件夹及文件总数3464
+20230103
+3287行后增加|--dataAnalysis.ini
+3279行后增加|--dfmDataAnalysis.dll
+521行后增加|--pcbConfig.ini
+70行后增加|--symbol_to_svg.dll
+文件夹及文件总数3468
 
 ========================================================================================
 SDK index
