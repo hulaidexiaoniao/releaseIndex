@@ -147,7 +147,11 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 20230103
 84行后增加|--treeWidget.qss
 文件夹及文件总数3469
-
+20230105
+179行后增加两行
+|--settings_foward.png
+|--settings_changHeadImg.png
+文件夹及文件总数3471
 ========================================================================================
 SDK index
 20221010
@@ -255,6 +259,10 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 374行后增加|--pcbConfig.ini
 19行后增加|--treeWidget.qss
 文件夹及文件总数418
+112行后增加两行
+|--settings_foward.png
+|--settings_changHeadImg.png
+文件夹及文件总数420
 
 
 
