@@ -10,12 +10,14 @@
                |--uiWidgetModule.dll
                |--travelerModule.dll
                |--syncqt.pl
+               |--startRepair.bat
                |--stackUpImpedanceModule.dll
                |--settingsModule.dll
                |--settings.ini
                |--resources
                   |--qss
                      |--unitButton.qss
+                     |--treeWidget.qss
                      |--tipsWidgetBlackStyle.qss
                      |--tipsWidget.qss
                      |--stackupMaterialDialog.qss
@@ -92,6 +94,8 @@
                      |--Vector1.png
                      |--Vector.png
                      |--Up_arrow.png
+                     |--treeOpen.png
+                     |--treeClose.png
                      |--tishi.png
                      |--tabButton_open_uncheck.png
                      |--tabButton_open_checkedFocus.png
@@ -106,6 +110,8 @@
                      |--showPswd_false.png
                      |--showNormal.png
                      |--share.png
+                     |--settings_foward.png
+                     |--settings_changHeadImg.png
                      |--search.png
                      |--risingArrow.png
                      |--RightArrow.png
@@ -118,6 +124,7 @@
                      |--pw_open.png
                      |--pw_close.png
                      |--progressIMG.png
+                     |--pcb_impedanceSettings_back.png
                      |--PCB_goBack.png
                      |--PCB_createSheet_normal.png
                      |--panelizationPCB_tipsIcon.png
@@ -290,12 +297,14 @@
                      |--headerSort_up_1x.png
                      |--headerSort_1x.png
                      |--guide_nl.png
+                     |--fileblue.png
                      |--file.png
                      |--factoryRegulations_normal.png
                      |--factoryRegulations_add.png
                      |--export_success.png
                      |--export_inputParamsImg.png
                      |--export_failed.png
+                     |--eqLink.png
                      |--eq_goBack.png
                      |--eq_deleteImg.png
                      |--eq_addImg.png
@@ -314,6 +323,10 @@
                      |--drillChecked.png
                      |--DOWNarrow1.png
                      |--downArrow.png
+                     |--dfmRightShow.png
+                     |--dfmLeftShow.png
+                     |--dfmLastShow.png
+                     |--dfmFirstShow.png
                      |--deleteFile.png
                      |--delete1.png
                      |--delete.png
@@ -340,6 +353,8 @@
                      |--arrowheaa.png
                   |--font
                      |--Inter-Regular-9.otf
+                     |--Inter.ttf
+                     |--CooperBlack.ttf
                      |--Alibaba-PuHuiTi-Regular.ttf
                      |--Alibaba-PuHuiTi-Medium.ttf
                      |--Alibaba-PuHuiTi-Light.ttf
@@ -360,6 +375,7 @@
                |--preProcessModule.dll
                |--pluginManager.dll
                |--pcbSheetSize.ini
+               |--pcbConfig.ini
                |--panelSize.ini
                |--panelizationModule.dll
                |--output
@@ -377,8 +393,11 @@
                |--epedapro_zh.qm
                |--EPEDAPro.exe
                |--drillAnalysisModule.dll
+               |--dfmDataAnalysis.dll
                |--dfmAnalysisModule.dll
                |--debug.log
+               |--databaseModule.dll
+               |--dataAnalysis.ini
                |--config
                   |--pluginConfig.json
                   |--Panelization
