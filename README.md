@@ -264,6 +264,16 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--settings_foward.png
 |--settings_changHeadImg.png
 文件夹及文件总数420
+20230112
+303行后增加|--export_tipsIcon_enabled.png
+299行后增加|--fileblueclose.png
+148行后增加|--mirrorSetting_back.png
+115行后增加
+|--ScalingSetting_back.png
+|--RotateSetting_back.png
+60行后增加
+|--exportGerber_selectLayerItem.qss
+|--exportGerber.qss
 
 
 
