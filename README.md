@@ -152,6 +152,17 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--settings_foward.png
 |--settings_changHeadImg.png
 文件夹及文件总数3471
+20230112
+370行后增加|--export_tipsIcon_enabled.png
+366行后增加|--fileblueclose.png
+215行后增加|--mirrorSetting_back.png
+182行后增加
+|--ScalingSetting_back.png
+|--RotateSetting_back.png
+125行后增加
+|--exportGerber_selectLayerItem.qss
+|--exportGerber.qss
+文件夹及文件总数3478
 
 ========================================================================================
 SDK index
@@ -274,7 +285,7 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 60行后增加
 |--exportGerber_selectLayerItem.qss
 |--exportGerber.qss
-
+文件夹及文件总数427
 
 
 ========================================================================================
