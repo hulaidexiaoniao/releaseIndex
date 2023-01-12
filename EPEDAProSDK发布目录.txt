@@ -58,6 +58,8 @@
                      |--factoryRegulationsModule.qss
                      |--exportSecondaryTab.qss
                      |--exportModule.qss
+                     |--exportGerber_selectLayerItem.qss
+                     |--exportGerber.qss
                      |--eqModule.qss
                      |--eqEditView.qss
                      |--eqCheckView.qss
@@ -113,6 +115,8 @@
                      |--settings_foward.png
                      |--settings_changHeadImg.png
                      |--search.png
+                     |--ScalingSetting_back.png
+                     |--RotateSetting_back.png
                      |--risingArrow.png
                      |--RightArrow.png
                      |--Rectangle34.png
@@ -146,6 +150,7 @@
                      |--morePlugins.png
                      |--moreBtn.png
                      |--More.png
+                     |--mirrorSetting_back.png
                      |--min.png
                      |--message_success.png
                      |--message_faided.png
@@ -297,10 +302,12 @@
                      |--headerSort_up_1x.png
                      |--headerSort_1x.png
                      |--guide_nl.png
+                     |--fileblueclose.png
                      |--fileblue.png
                      |--file.png
                      |--factoryRegulations_normal.png
                      |--factoryRegulations_add.png
+                     |--export_tipsIcon_enabled.png
                      |--export_success.png
                      |--export_inputParamsImg.png
                      |--export_failed.png
