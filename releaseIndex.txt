@@ -132,6 +132,7 @@
                      |--EPEDAPro.qss
                      |--dropWidget.qss
                      |--drillAnalysisModule.qss
+                     |--dfmSettings.qss
                      |--defaultMenu.qss
                      |--defaultButton_disabled.qss
                      |--defaultButton.qss
@@ -397,6 +398,7 @@
                      |--drillChecked.png
                      |--DOWNarrow1.png
                      |--downArrow.png
+                     |--dfmSettings_branch.png
                      |--dfmRightShow.png
                      |--dfmLeftShow.png
                      |--dfmLastShow.png
