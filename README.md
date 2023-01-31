@@ -163,6 +163,10 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--exportGerber_selectLayerItem.qss
 |--exportGerber.qss
 文件夹及文件总数3478
+20230131
+399行后增加|--dfmSettings_branch.png
+134行后增加|--dfmSettings.qss
+文件夹及文件总数3480
 
 ========================================================================================
 SDK index
@@ -286,6 +290,10 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--exportGerber_selectLayerItem.qss
 |--exportGerber.qss
 文件夹及文件总数427
+20230131
+332行后增加|--dfmSettings_branch.png
+69行后增加|--dfmSettings.qss
+文件夹及文件总数429
 
 
 ========================================================================================
