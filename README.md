@@ -167,6 +167,10 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 399行后增加|--dfmSettings_branch.png
 134行后增加|--dfmSettings.qss
 文件夹及文件总数3480
+20230202
+576行后增加|--inflationContractionModule.dll
+117行后增加|--inflationContractionModule.qss
+文件夹及文件总数3482
 
 ========================================================================================
 SDK index
@@ -294,6 +298,10 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 332行后增加|--dfmSettings_branch.png
 69行后增加|--dfmSettings.qss
 文件夹及文件总数429
+20230202
+395行后增加|--inflationContractionModule.dll
+52行后增加|--inflationContractionModule.qss
+文件夹及文件总数431
 
 
 ========================================================================================
