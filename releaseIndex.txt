@@ -115,6 +115,7 @@
                      |--jobInMemoryLargeStyleWidgetDeSelect.qss
                      |--inputViewSourceFile.qss
                      |--inputAdvancedSetting.qss
+                     |--inflationContractionModule.qss
                      |--importTipDialog.qss
                      |--importModule.qss
                      |--importFileWidget.qss
@@ -574,6 +575,7 @@
                |--IPC2581Lib.dll
                |--ipc2581.dll
                |--InputLib.dll
+               |--inflationContractionModule.dll
                |--importModule.dll
                |--Graphic_View.dll
                |--Graphic_Toolbar_Move.dll
