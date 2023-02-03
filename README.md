@@ -171,6 +171,21 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 576行后增加|--inflationContractionModule.dll
 117行后增加|--inflationContractionModule.qss
 文件夹及文件总数3482
+20230203
+79行后增加|--transFiles
+             |--uiwidgetmodule_zh.qm
+             |--uiwidgetmodule_en.qm
+             |--importmodule_zh.qm
+             |--importmodule_en.qm
+             |--exportmodule_zh.qm
+             |--exportmodule_en.qm
+             |--epedapro_zh.qm
+             |--epedapro_en.qm
+             |--drillanalysismodule_zh.qm
+             |--drillanalysismodule_en.qm
+             |--camjobvsmodule_zh.qm
+             |--camjobvsmodule_en.qm
+文件夹及文件总数3495
 
 ========================================================================================
 SDK index
@@ -302,6 +317,21 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 395行后增加|--inflationContractionModule.dll
 52行后增加|--inflationContractionModule.qss
 文件夹及文件总数431
+20230203
+17行后增加|--transFiles
+             |--uiwidgetmodule_zh.qm
+             |--uiwidgetmodule_en.qm
+             |--importmodule_zh.qm
+             |--importmodule_en.qm
+             |--exportmodule_zh.qm
+             |--exportmodule_en.qm
+             |--epedapro_zh.qm
+             |--epedapro_en.qm
+             |--drillanalysismodule_zh.qm
+             |--drillanalysismodule_en.qm
+             |--camjobvsmodule_zh.qm
+             |--camjobvsmodule_en.qm
+文件夹及文件总数444
 
 
 ========================================================================================
