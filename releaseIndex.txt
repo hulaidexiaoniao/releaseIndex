@@ -77,6 +77,19 @@
                |--settings.ini
                |--resources
                   |--yuepu.png
+                  |--transFiles
+                     |--uiwidgetmodule_zh.qm
+                     |--uiwidgetmodule_en.qm
+                     |--importmodule_zh.qm
+                     |--importmodule_en.qm
+                     |--exportmodule_zh.qm
+                     |--exportmodule_en.qm
+                     |--epedapro_zh.qm
+                     |--epedapro_en.qm
+                     |--drillanalysismodule_zh.qm
+                     |--drillanalysismodule_en.qm
+                     |--camjobvsmodule_zh.qm
+                     |--camjobvsmodule_en.qm
                   |--stylesheet.qss
                   |--solder_mask_check
                   |--signal_layer_check
