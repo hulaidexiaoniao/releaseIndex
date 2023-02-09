@@ -116,6 +116,7 @@
                      |--nodeWidget.qss
                      |--morePluginButton.qss
                      |--menu.qss
+                     |--machineData.qss
                      |--localJobBackUpDetailStyleSelect.qss
                      |--localJobBackUpDetailStyleRename.qss
                      |--localJobBackUpDetailStyleDeSelect.qss
@@ -194,6 +195,7 @@
                      |--showPswd_false.png
                      |--showNormal.png
                      |--share.png
+                     |--settings_useInfo.png
                      |--settings_foward.png
                      |--settings_changHeadImg.png
                      |--search.png
@@ -420,6 +422,7 @@
                      |--deleteFile.png
                      |--delete1.png
                      |--delete.png
+                     |--default_headImg.png
                      |--cloudProject_upLoadWorkJob.png
                      |--cloudProject_shareProject.png
                      |--cloudProject_exportWorkJob.png
@@ -545,9 +548,7 @@
                   |--qoffscreen.dll
                   |--qminimal.dll
                   |--qdirect2d.dll
-               |--pcbSheetSize.ini   
                |--pcbConfig.ini
-               |--panelSize.ini
                |--panelizationModule.dll
                |--Packet.dll
                |--output
@@ -3261,6 +3262,7 @@
                |--EPDFM_Analysis.dll
                |--EPDFM.dll
                |--epconfig.ini
+               |--EPCAM_UITYPE.dll
                |--EPCAM_DBService.dll
                |--EPCAM_CTYPE.dll
                |--EPCAM_API.dll
@@ -3341,6 +3343,7 @@
                      |--DR_drill.json
                   |--dms_orderreceive.json
                   |--dms_dbconfig.json
+                  |--checkDisplay.json
                   |--cammatenodes.json
                   |--AutoMatrixConfig
                      |--MatchRules.json
