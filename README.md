@@ -186,6 +186,14 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
              |--camjobvsmodule_zh.qm
              |--camjobvsmodule_en.qm
 文件夹及文件总数3495
+20230209
+3343行后增加|--checkDisplay.json
+3263行后增加|--EPCAM_UITYPE.dll
+422行后增加|--default_headImg.png
+196行后增加|--settings_useInfo.png
+118行后增加|--machineData.qss
+删除553，551行
+文件夹及文件总数3498
 
 ========================================================================================
 SDK index
@@ -332,7 +340,13 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
              |--camjobvsmodule_zh.qm
              |--camjobvsmodule_en.qm
 文件夹及文件总数444
-
+20230209
+437行后增加|--checkDisplay.json
+355行后增加|--default_headImg.png
+129行后增加|--settings_useInfo.png
+54行后增加|--machineData.qss
+删除405，403行
+文件夹及文件总数446
 
 ========================================================================================
 epkernel bin
