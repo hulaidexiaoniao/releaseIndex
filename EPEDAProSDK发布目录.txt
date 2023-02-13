@@ -65,6 +65,8 @@
                      |--inputViewSourceFile.qss
                      |--inputAdvancedSetting.qss
                      |--inflationContractionModule.qss
+                     |--in_stackupWidget.qss
+                     |--in_queryPage.qss
                      |--importTipDialog.qss
                      |--importModule.qss
                      |--importFileWidget.qss
