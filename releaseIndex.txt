@@ -88,6 +88,8 @@
                      |--epedapro_en.qm
                      |--drillanalysismodule_zh.qm
                      |--drillanalysismodule_en.qm
+                     |--cloudprojectmodule_zh.qm
+                     |--cloudprojectmodule_en.qm
                      |--camjobvsmodule_zh.qm
                      |--camjobvsmodule_en.qm
                   |--stylesheet.qss
