@@ -204,7 +204,11 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--projectSourceFilter.png
 |--projectSourceFilter_checked.png
 文件夹及文件总数3502
-
+20230215
+90行后增加
+|--cloudprojectmodule_zh.qm
+|--cloudprojectmodule_en.qm
+文件夹及文件总数3504
 ========================================================================================
 SDK index
 20221010
@@ -367,6 +371,11 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--projectSourceFilter.png
 |--projectSourceFilter_checked.png
 文件夹及文件总数450
+20230215
+28行后增加
+|--cloudprojectmodule_zh.qm
+|--cloudprojectmodule_en.qm
+文件夹及文件总数452
 
 
 
