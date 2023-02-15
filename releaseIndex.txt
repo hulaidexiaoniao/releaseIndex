@@ -214,6 +214,8 @@
                      |--pw_open.png
                      |--pw_close.png
                      |--progressIMG.png
+                     |--projectSourceFilter.png
+                     |--projectSourceFilter_checked.png
                      |--pcb_impedanceSettings_back.png
                      |--PCB_goBack.png
                      |--PCB_createSheet_normal.png
