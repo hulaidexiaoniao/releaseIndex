@@ -199,6 +199,11 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--in_stackupWidget.qss
 |--in_queryPage.qss
 文件夹及文件总数3500
+20230215
+216行后增加
+|--projectSourceFilter.png
+|--projectSourceFilter_checked.png
+文件夹及文件总数3502
 
 ========================================================================================
 SDK index
@@ -357,6 +362,13 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--in_stackupWidget.qss
 |--in_queryPage.qss
 文件夹及文件总数448
+20230215
+149行后增加
+|--projectSourceFilter.png
+|--projectSourceFilter_checked.png
+文件夹及文件总数450
+
+
 
 ========================================================================================
 epkernel bin
