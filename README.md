@@ -209,6 +209,13 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--cloudprojectmodule_zh.qm
 |--cloudprojectmodule_en.qm
 文件夹及文件总数3504
+20230216
+84行后增加
+|--factoryregulationsmodule_zh.qm
+|--factoryregulationsmodule_en.qm
+文件夹及文件总数3506
+
+
 ========================================================================================
 SDK index
 20221010
@@ -376,6 +383,11 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--cloudprojectmodule_zh.qm
 |--cloudprojectmodule_en.qm
 文件夹及文件总数452
+20230216
+22行后增加
+|--factoryregulationsmodule_zh.qm
+|--factoryregulationsmodule_en.qm
+文件夹及文件总数454
 
 
 
