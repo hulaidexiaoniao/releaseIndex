@@ -82,6 +82,8 @@
                      |--uiwidgetmodule_en.qm
                      |--importmodule_zh.qm
                      |--importmodule_en.qm
+                     |--factoryregulationsmodule_zh.qm
+                     |--factoryregulationsmodule_en.qm
                      |--exportmodule_zh.qm
                      |--exportmodule_en.qm
                      |--epedapro_zh.qm
