@@ -214,7 +214,12 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--factoryregulationsmodule_zh.qm
 |--factoryregulationsmodule_en.qm
 文件夹及文件总数3506
-
+20230223
+450行后增加
+|--calendar_right.png
+|--calendar_left.png
+120行后增加|--myCalendar.qss
+文件夹及文件总数3509
 
 ========================================================================================
 SDK index
@@ -388,6 +393,12 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--factoryregulationsmodule_zh.qm
 |--factoryregulationsmodule_en.qm
 文件夹及文件总数454
+20230223
+384行后增加
+|--calendar_right.png
+|--calendar_left.png
+55行后增加|--myCalendar.qss
+文件夹及文件总数457
 
 
 
