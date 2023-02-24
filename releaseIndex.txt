@@ -80,6 +80,8 @@
                   |--transFiles
                      |--uiwidgetmodule_zh.qm
                      |--uiwidgetmodule_en.qm
+                     |--panelizationmodule_zh.qm
+                     |--panelizationmodule_en.qm
                      |--importmodule_zh.qm
                      |--importmodule_en.qm
                      |--factoryregulationsmodule_zh.qm
