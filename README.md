@@ -220,6 +220,11 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--calendar_left.png
 120行后增加|--myCalendar.qss
 文件夹及文件总数3509
+20230224
+82行后增加
+|--panelizationmodule_zh.qm
+|--panelizationmodule_en.qm
+文件夹及文件总数3511
 
 ========================================================================================
 SDK index
@@ -399,6 +404,11 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--calendar_left.png
 55行后增加|--myCalendar.qss
 文件夹及文件总数457
+20230224
+20行后增加
+|--panelizationmodule_zh.qm
+|--panelizationmodule_en.qm
+文件夹及文件总数459
 
 
 
