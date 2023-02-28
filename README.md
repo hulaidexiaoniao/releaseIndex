@@ -152,6 +152,79 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--settings_foward.png
 |--settings_changHeadImg.png
 文件夹及文件总数3471
+20230112
+370行后增加|--export_tipsIcon_enabled.png
+366行后增加|--fileblueclose.png
+215行后增加|--mirrorSetting_back.png
+182行后增加
+|--ScalingSetting_back.png
+|--RotateSetting_back.png
+125行后增加
+|--exportGerber_selectLayerItem.qss
+|--exportGerber.qss
+文件夹及文件总数3478
+20230131
+399行后增加|--dfmSettings_branch.png
+134行后增加|--dfmSettings.qss
+文件夹及文件总数3480
+20230202
+576行后增加|--inflationContractionModule.dll
+117行后增加|--inflationContractionModule.qss
+文件夹及文件总数3482
+20230203
+79行后增加|--transFiles
+             |--uiwidgetmodule_zh.qm
+             |--uiwidgetmodule_en.qm
+             |--importmodule_zh.qm
+             |--importmodule_en.qm
+             |--exportmodule_zh.qm
+             |--exportmodule_en.qm
+             |--epedapro_zh.qm
+             |--epedapro_en.qm
+             |--drillanalysismodule_zh.qm
+             |--drillanalysismodule_en.qm
+             |--camjobvsmodule_zh.qm
+             |--camjobvsmodule_en.qm
+文件夹及文件总数3495
+20230209
+3343行后增加|--checkDisplay.json
+3263行后增加|--EPCAM_UITYPE.dll
+422行后增加|--default_headImg.png
+196行后增加|--settings_useInfo.png
+118行后增加|--machineData.qss
+删除553，551行
+文件夹及文件总数3498
+20230213
+132行后增加
+|--in_stackupWidget.qss
+|--in_queryPage.qss
+文件夹及文件总数3500
+20230215
+216行后增加
+|--projectSourceFilter.png
+|--projectSourceFilter_checked.png
+文件夹及文件总数3502
+20230215
+90行后增加
+|--cloudprojectmodule_zh.qm
+|--cloudprojectmodule_en.qm
+文件夹及文件总数3504
+20230216
+84行后增加
+|--factoryregulationsmodule_zh.qm
+|--factoryregulationsmodule_en.qm
+文件夹及文件总数3506
+20230223
+450行后增加
+|--calendar_right.png
+|--calendar_left.png
+120行后增加|--myCalendar.qss
+文件夹及文件总数3509
+20230224
+82行后增加
+|--panelizationmodule_zh.qm
+|--panelizationmodule_en.qm
+文件夹及文件总数3511
 
 ========================================================================================
 SDK index
@@ -264,6 +337,78 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--settings_foward.png
 |--settings_changHeadImg.png
 文件夹及文件总数420
+20230112
+303行后增加|--export_tipsIcon_enabled.png
+299行后增加|--fileblueclose.png
+148行后增加|--mirrorSetting_back.png
+115行后增加
+|--ScalingSetting_back.png
+|--RotateSetting_back.png
+60行后增加
+|--exportGerber_selectLayerItem.qss
+|--exportGerber.qss
+文件夹及文件总数427
+20230131
+332行后增加|--dfmSettings_branch.png
+69行后增加|--dfmSettings.qss
+文件夹及文件总数429
+20230202
+395行后增加|--inflationContractionModule.dll
+52行后增加|--inflationContractionModule.qss
+文件夹及文件总数431
+20230203
+17行后增加|--transFiles
+             |--uiwidgetmodule_zh.qm
+             |--uiwidgetmodule_en.qm
+             |--importmodule_zh.qm
+             |--importmodule_en.qm
+             |--exportmodule_zh.qm
+             |--exportmodule_en.qm
+             |--epedapro_zh.qm
+             |--epedapro_en.qm
+             |--drillanalysismodule_zh.qm
+             |--drillanalysismodule_en.qm
+             |--camjobvsmodule_zh.qm
+             |--camjobvsmodule_en.qm
+文件夹及文件总数444
+20230209
+437行后增加|--checkDisplay.json
+355行后增加|--default_headImg.png
+129行后增加|--settings_useInfo.png
+54行后增加|--machineData.qss
+删除405，403行
+文件夹及文件总数446
+20230213
+67行后增加
+|--in_stackupWidget.qss
+|--in_queryPage.qss
+文件夹及文件总数448
+20230215
+149行后增加
+|--projectSourceFilter.png
+|--projectSourceFilter_checked.png
+文件夹及文件总数450
+20230215
+28行后增加
+|--cloudprojectmodule_zh.qm
+|--cloudprojectmodule_en.qm
+文件夹及文件总数452
+20230216
+22行后增加
+|--factoryregulationsmodule_zh.qm
+|--factoryregulationsmodule_en.qm
+文件夹及文件总数454
+20230223
+384行后增加
+|--calendar_right.png
+|--calendar_left.png
+55行后增加|--myCalendar.qss
+文件夹及文件总数457
+20230224
+20行后增加
+|--panelizationmodule_zh.qm
+|--panelizationmodule_en.qm
+文件夹及文件总数459
 
 
 

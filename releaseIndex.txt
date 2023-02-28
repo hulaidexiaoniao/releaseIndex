@@ -77,6 +77,25 @@
                |--settings.ini
                |--resources
                   |--yuepu.png
+                  |--transFiles
+                     |--uiwidgetmodule_zh.qm
+                     |--uiwidgetmodule_en.qm
+                     |--panelizationmodule_zh.qm
+                     |--panelizationmodule_en.qm
+                     |--importmodule_zh.qm
+                     |--importmodule_en.qm
+                     |--factoryregulationsmodule_zh.qm
+                     |--factoryregulationsmodule_en.qm
+                     |--exportmodule_zh.qm
+                     |--exportmodule_en.qm
+                     |--epedapro_zh.qm
+                     |--epedapro_en.qm
+                     |--drillanalysismodule_zh.qm
+                     |--drillanalysismodule_en.qm
+                     |--cloudprojectmodule_zh.qm
+                     |--cloudprojectmodule_en.qm
+                     |--camjobvsmodule_zh.qm
+                     |--camjobvsmodule_en.qm
                   |--stylesheet.qss
                   |--solder_mask_check
                   |--signal_layer_check
@@ -101,8 +120,10 @@
                      |--noticeInfoWidget.qss
                      |--noticeErrorWidget.qss
                      |--nodeWidget.qss
+                     |--myCalendar.qss
                      |--morePluginButton.qss
                      |--menu.qss
+                     |--machineData.qss
                      |--localJobBackUpDetailStyleSelect.qss
                      |--localJobBackUpDetailStyleRename.qss
                      |--localJobBackUpDetailStyleDeSelect.qss
@@ -115,6 +136,9 @@
                      |--jobInMemoryLargeStyleWidgetDeSelect.qss
                      |--inputViewSourceFile.qss
                      |--inputAdvancedSetting.qss
+                     |--inflationContractionModule.qss
+                     |--in_stackupWidget.qss
+                     |--in_queryPage.qss
                      |--importTipDialog.qss
                      |--importModule.qss
                      |--importFileWidget.qss
@@ -123,6 +147,8 @@
                      |--factoryRegulationsModule.qss
                      |--exportSecondaryTab.qss
                      |--exportModule.qss
+                     |--exportGerber_selectLayerItem.qss
+                     |--exportGerber.qss
                      |--eqModule.qss
                      |--eqEditView.qss
                      |--eqCheckView.qss
@@ -130,6 +156,7 @@
                      |--EPEDAPro.qss
                      |--dropWidget.qss
                      |--drillAnalysisModule.qss
+                     |--dfmSettings.qss
                      |--defaultMenu.qss
                      |--defaultButton_disabled.qss
                      |--defaultButton.qss
@@ -177,9 +204,12 @@
                      |--showPswd_false.png
                      |--showNormal.png
                      |--share.png
+                     |--settings_useInfo.png
                      |--settings_foward.png
                      |--settings_changHeadImg.png
                      |--search.png
+                     |--ScalingSetting_back.png
+                     |--RotateSetting_back.png
                      |--risingArrow.png
                      |--RightArrow.png
                      |--Rectangle34.png
@@ -191,6 +221,8 @@
                      |--pw_open.png
                      |--pw_close.png
                      |--progressIMG.png
+                     |--projectSourceFilter.png
+                     |--projectSourceFilter_checked.png
                      |--pcb_impedanceSettings_back.png
                      |--PCB_goBack.png
                      |--PCB_createSheet_normal.png
@@ -213,6 +245,7 @@
                      |--morePlugins.png
                      |--moreBtn.png
                      |--More.png
+                     |--mirrorSetting_back.png
                      |--min.png
                      |--message_success.png
                      |--message_faided.png
@@ -364,10 +397,12 @@
                      |--headerSort_up_1x.png
                      |--headerSort_1x.png
                      |--guide_nl.png
+                     |--fileblueclose.png
                      |--fileblue.png
                      |--file.png
                      |--factoryRegulations_normal.png
                      |--factoryRegulations_add.png
+                     |--export_tipsIcon_enabled.png
                      |--export_success.png
                      |--export_inputParamsImg.png
                      |--export_failed.png
@@ -390,6 +425,7 @@
                      |--drillChecked.png
                      |--DOWNarrow1.png
                      |--downArrow.png
+                     |--dfmSettings_branch.png
                      |--dfmRightShow.png
                      |--dfmLeftShow.png
                      |--dfmLastShow.png
@@ -397,6 +433,7 @@
                      |--deleteFile.png
                      |--delete1.png
                      |--delete.png
+                     |--default_headImg.png
                      |--cloudProject_upLoadWorkJob.png
                      |--cloudProject_shareProject.png
                      |--cloudProject_exportWorkJob.png
@@ -414,6 +451,8 @@
                      |--camJobVs_step3.png
                      |--camJobVs_step2.png
                      |--camJobVs_step1.png
+                     |--calendar_right.png
+                     |--calendar_left.png
                      |--button_switch_on.png
                      |--button_switch_off.png
                      |--arrowlater.png
@@ -522,9 +561,7 @@
                   |--qoffscreen.dll
                   |--qminimal.dll
                   |--qdirect2d.dll
-               |--pcbSheetSize.ini   
                |--pcbConfig.ini
-               |--panelSize.ini
                |--panelizationModule.dll
                |--Packet.dll
                |--output
@@ -565,6 +602,7 @@
                |--IPC2581Lib.dll
                |--ipc2581.dll
                |--InputLib.dll
+               |--inflationContractionModule.dll
                |--importModule.dll
                |--Graphic_View.dll
                |--Graphic_Toolbar_Move.dll
@@ -3237,6 +3275,7 @@
                |--EPDFM_Analysis.dll
                |--EPDFM.dll
                |--epconfig.ini
+               |--EPCAM_UITYPE.dll
                |--EPCAM_DBService.dll
                |--EPCAM_CTYPE.dll
                |--EPCAM_API.dll
@@ -3317,6 +3356,7 @@
                      |--DR_drill.json
                   |--dms_orderreceive.json
                   |--dms_dbconfig.json
+                  |--checkDisplay.json
                   |--cammatenodes.json
                   |--AutoMatrixConfig
                      |--MatchRules.json
