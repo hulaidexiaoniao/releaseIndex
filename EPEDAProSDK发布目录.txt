@@ -437,7 +437,6 @@
                |--factoryRegulationsModule.dll
                |--factory.json
                |--exportModule.dll
-               |--epedapro_zh.qm
                |--EPEDAPro.exe
                |--drillAnalysisModule.dll
                |--dfmDataAnalysis.dll
