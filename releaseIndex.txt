@@ -92,6 +92,8 @@
                      |--epedapro_en.qm
                      |--drillanalysismodule_zh.qm
                      |--drillanalysismodule_en.qm
+                     |--databasemodule_zh.qm
+                     |--databasemodule_en.qm
                      |--cloudprojectmodule_zh.qm
                      |--cloudprojectmodule_en.qm
                      |--camjobvsmodule_zh.qm
@@ -176,7 +178,7 @@
                   |--logo.png
                   |--logo.ico
                   |--jsonResource
-                     |--pp.json
+                        |--pp.json
                      |--core.json
                      |--copper.json
                   |--images
@@ -197,6 +199,13 @@
                      |--tabButton_close_checkedFocus.png
                      |--sync_drill_icon.png
                      |--switch_on.png
+                     |--stackUpPic
+                        |--12EPJ9225DH79_pnl.png
+                        |--08TZ98275AA_pnl_L2~7.png
+                        |--08TZ98275AA_pnl_L1~8.png
+                        |--04TFA3090BC_pnl.png
+                        |--04TFA3037AA_pnl.png
+                        |--04BF17050GA_pnl.png
                      |--sRectangle.png
                      |--sortChange1.png
                      |--sortChange.png
