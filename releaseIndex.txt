@@ -178,7 +178,7 @@
                   |--logo.png
                   |--logo.ico
                   |--jsonResource
-                        |--pp.json
+                     |--pp.json
                      |--core.json
                      |--copper.json
                   |--images
