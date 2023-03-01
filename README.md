@@ -225,6 +225,20 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--panelizationmodule_zh.qm
 |--panelizationmodule_en.qm
 文件夹及文件总数3511
+20230301
+199行后增加 
+|--stackUpPic
+   |--12EPJ9225DH79_pnl.png
+   |--08TZ98275AA_pnl_L2~7.png
+   |--08TZ98275AA_pnl_L1~8.png
+   |--04TFA3090BC_pnl.png
+   |--04TFA3037AA_pnl.png
+   |--04BF17050GA_pnl.png
+94行后增加
+|--databasemodule_zh.qm
+|--databasemodule_en.qm
+文件夹及文件总数3520
+ 
 
 ========================================================================================
 SDK index
@@ -409,6 +423,19 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--panelizationmodule_zh.qm
 |--panelizationmodule_en.qm
 文件夹及文件总数459
+20230301
+132行后增加 
+|--stackUpPic
+   |--12EPJ9225DH79_pnl.png
+   |--08TZ98275AA_pnl_L2~7.png
+   |--08TZ98275AA_pnl_L1~8.png
+   |--04TFA3090BC_pnl.png
+   |--04TFA3037AA_pnl.png
+   |--04BF17050GA_pnl.png
+32行后增加
+|--databasemodule_zh.qm
+|--databasemodule_en.qm
+文件夹及文件总数468
 
 
 
