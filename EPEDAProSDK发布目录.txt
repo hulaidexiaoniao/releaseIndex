@@ -30,6 +30,8 @@
                      |--epedapro_en.qm
                      |--drillanalysismodule_zh.qm
                      |--drillanalysismodule_en.qm
+                     |--dfmanalysismodule_zh.qm
+                     |--dfmanalysismodule_en.qm
                      |--databasemodule_zh.qm
                      |--databasemodule_en.qm
                      |--cloudprojectmodule_zh.qm
@@ -52,6 +54,7 @@
                      |--panelizationPCB.qss
                      |--panelizationModule.qss
                      |--pagingWidget.qss
+                     |--orderModule.qss
                      |--noticeWarningWidget.qss
                      |--noticeSuccessWidget.qss
                      |--noticeInfoWidget.qss
