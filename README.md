@@ -244,6 +244,14 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
  20230302
  删除3316行|--dmsCfg.ini
  文件夹及文件总数3518
+20230306
+119行后增加|--orderModule.qss
+94行后增加
+|--dfmanalysismodule_en.qm
+|--dfmanalysismodule_zh.qm
+文件夹及文件总数3521
+ 
+ 
 
 ========================================================================================
 SDK index
@@ -444,6 +452,12 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 20230302
  删除多余翻译文件一个
  文件夹及文件总数467
+20230306
+54行后增加|--orderModule.qss
+32行后增加
+|--dfmanalysismodule_en.qm
+|--dfmanalysismodule_zh.qm
+文件夹及文件总数470
 
 
 
