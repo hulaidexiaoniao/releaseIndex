@@ -428,6 +428,7 @@
                |--pcbConfig.ini
                |--panelizationModule.dll
                |--output
+               |--orderModule.dll
                |--networkCommonModule.dll
                |--localJobBackupModule.dll
                |--jobInMemoryModule.dll
@@ -441,6 +442,7 @@
                |--factory.json
                |--exportModule.dll
                |--EPEDAPro.exe
+               |--EDAConfig.ini
                |--drillAnalysisModule.dll
                |--dfmDataAnalysis.dll
                |--dfmAnalysisModule.dll
