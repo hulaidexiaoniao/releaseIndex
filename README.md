@@ -250,6 +250,10 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--dfmanalysismodule_en.qm
 |--dfmanalysismodule_zh.qm
 文件夹及文件总数3521
+20230308
+3297行后增加|--EDAConfig.ini
+580行后增加|--orderModule.dll
+文件夹及文件总数3523
  
  
 
@@ -458,6 +462,10 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--dfmanalysismodule_en.qm
 |--dfmanalysismodule_zh.qm
 文件夹及文件总数470
+20230308
+443行后增加|--EDAConfig.ini
+430行后增加|--orderModule.dll
+文件夹及文件总数472
 
 
 
