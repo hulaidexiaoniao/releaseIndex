@@ -578,6 +578,7 @@
                |--Packet.dll
                |--output
                |--OrderReceive.dll
+               |--orderModule.dll
                |--opencv_world401.dll
                |--opencv_ffmpeg401_64.dll
                |--odbpp_lib.dll
@@ -3295,6 +3296,7 @@
                |--EPCAM-GraphicEditor.dll
                |--EPCAM-Enginner.dll
                |--EditOp.dll
+               |--EDAConfig.ini
                |--DxfLib.dll
                |--drillAnalysisModule.dll
                |--DMS_UICommon.dll
