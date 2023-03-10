@@ -20,6 +20,8 @@
                      |--uiwidgetmodule_en.qm
                      |--panelizationmodule_zh.qm
                      |--panelizationmodule_en.qm
+                     |--ordermodule_zh.qm
+                     |--ordermodule_en.qm
                      |--importmodule_zh.qm
                      |--importmodule_en.qm
                      |--factoryregulationsmodule_zh.qm
@@ -469,4 +471,5 @@
                   |--updateVersion.json
                |--camJobVsModule.dll
                |--batchDfmAnalysisModule.dll
+               |--AutoMatrix.dll
                |--AliyunSdk.dll
