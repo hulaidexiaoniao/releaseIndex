@@ -82,6 +82,8 @@
                      |--uiwidgetmodule_en.qm
                      |--panelizationmodule_zh.qm
                      |--panelizationmodule_en.qm
+                     |--ordermodule_zh.qm
+                     |--ordermodule_en.qm
                      |--importmodule_zh.qm
                      |--importmodule_en.qm
                      |--factoryregulationsmodule_zh.qm
@@ -3518,6 +3520,7 @@
                |--bson-1.0.dll
                |--BLL.dll
                |--batchDfmAnalysisModule.dll
+               |--AutoMatrix.dll
                |--api-ms-win-crt-runtime-l1-1-0.dll
                |--AliyunSdk.dll
                |--7z.dll
