@@ -254,7 +254,12 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 3297行后增加|--EDAConfig.ini
 580行后增加|--orderModule.dll
 文件夹及文件总数3523
- 
+20230310
+3520行后增加|--AutoMatrix.dll
+84行后增加
+|--ordermodule_zh.qm
+|--ordermodule_en.qm
+文件夹及文件总数3526
  
 
 ========================================================================================
@@ -466,6 +471,13 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 443行后增加|--EDAConfig.ini
 430行后增加|--orderModule.dll
 文件夹及文件总数472
+20230310
+471行后增加|--AutoMatrix.dll
+22行后增加
+|--ordermodule_zh.qm
+|--ordermodule_en.qm
+文件夹及文件总数3526
+
 
 
 
