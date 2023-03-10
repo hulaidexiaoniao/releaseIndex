@@ -476,7 +476,7 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 22行后增加
 |--ordermodule_zh.qm
 |--ordermodule_en.qm
-文件夹及文件总数3526
+文件夹及文件总数475
 
 
 
