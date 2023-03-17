@@ -82,6 +82,8 @@
                      |--uiwidgetmodule_en.qm
                      |--panelizationmodule_zh.qm
                      |--panelizationmodule_en.qm
+                     |--ordermodule_zh.qm
+                     |--ordermodule_en.qm
                      |--importmodule_zh.qm
                      |--importmodule_en.qm
                      |--factoryregulationsmodule_zh.qm
@@ -92,6 +94,10 @@
                      |--epedapro_en.qm
                      |--drillanalysismodule_zh.qm
                      |--drillanalysismodule_en.qm
+                     |--dfmanalysismodule_zh.qm
+                     |--dfmanalysismodule_en.qm
+                     |--databasemodule_zh.qm
+                     |--databasemodule_en.qm
                      |--cloudprojectmodule_zh.qm
                      |--cloudprojectmodule_en.qm
                      |--camjobvsmodule_zh.qm
@@ -115,6 +121,7 @@
                      |--panelizationPCB.qss
                      |--panelizationModule.qss
                      |--pagingWidget.qss
+                     |--orderModule.qss
                      |--noticeWarningWidget.qss
                      |--noticeSuccessWidget.qss
                      |--noticeInfoWidget.qss
@@ -197,6 +204,13 @@
                      |--tabButton_close_checkedFocus.png
                      |--sync_drill_icon.png
                      |--switch_on.png
+                     |--stackUpPic
+                        |--12EPJ9225DH79_pnl.png
+                        |--08TZ98275AA_pnl_L2~7.png
+                        |--08TZ98275AA_pnl_L1~8.png
+                        |--04TFA3090BC_pnl.png
+                        |--04TFA3037AA_pnl.png
+                        |--04BF17050GA_pnl.png
                      |--sRectangle.png
                      |--sortChange1.png
                      |--sortChange.png
@@ -566,6 +580,7 @@
                |--Packet.dll
                |--output
                |--OrderReceive.dll
+               |--orderModule.dll
                |--opencv_world401.dll
                |--opencv_ffmpeg401_64.dll
                |--odbpp_lib.dll
@@ -3267,7 +3282,6 @@
                |--EpsLIB.dll
                |--eplicense.dll
                |--epldkapi.dll
-               |--epedapro_zh.qm
                |--EPEDAPro.exe
                |--EPDMS_CTYPE.dll
                |--EPDMS_API_QT.dll
@@ -3284,6 +3298,7 @@
                |--EPCAM-GraphicEditor.dll
                |--EPCAM-Enginner.dll
                |--EditOp.dll
+               |--EDAConfig.ini
                |--DxfLib.dll
                |--drillAnalysisModule.dll
                |--DMS_UICommon.dll
@@ -3305,7 +3320,6 @@
                |--DMS_Competence_Widget.dll
                |--DMS_CompanyManage_Widet.dll
                |--DMS_Common.dll
-               |--dmsCfg.ini
                |--DFM_ToolBar.dll
                |--DFM_MenuBar_View.dll
                |--DFM_MenuBar_Tool.dll
@@ -3506,6 +3520,7 @@
                |--bson-1.0.dll
                |--BLL.dll
                |--batchDfmAnalysisModule.dll
+               |--AutoMatrix.dll
                |--api-ms-win-crt-runtime-l1-1-0.dll
                |--AliyunSdk.dll
                |--7z.dll

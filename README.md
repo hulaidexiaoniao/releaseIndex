@@ -225,6 +225,42 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 |--panelizationmodule_zh.qm
 |--panelizationmodule_en.qm
 文件夹及文件总数3511
+20230301
+199行后增加 
+|--stackUpPic
+   |--12EPJ9225DH79_pnl.png
+   |--08TZ98275AA_pnl_L2~7.png
+   |--08TZ98275AA_pnl_L1~8.png
+   |--04TFA3090BC_pnl.png
+   |--04TFA3037AA_pnl.png
+   |--04BF17050GA_pnl.png
+94行后增加
+|--databasemodule_zh.qm
+|--databasemodule_en.qm
+文件夹及文件总数3520
+20230302
+ 删除多余翻译文件一个
+ 文件夹及文件总数3519
+ 20230302
+ 删除3316行|--dmsCfg.ini
+ 文件夹及文件总数3518
+20230306
+119行后增加|--orderModule.qss
+94行后增加
+|--dfmanalysismodule_en.qm
+|--dfmanalysismodule_zh.qm
+文件夹及文件总数3521
+20230308
+3297行后增加|--EDAConfig.ini
+580行后增加|--orderModule.dll
+文件夹及文件总数3523
+20230310
+3520行后增加|--AutoMatrix.dll
+84行后增加
+|--ordermodule_zh.qm
+|--ordermodule_en.qm
+文件夹及文件总数3526
+ 
 
 ========================================================================================
 SDK index
@@ -409,6 +445,39 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--panelizationmodule_zh.qm
 |--panelizationmodule_en.qm
 文件夹及文件总数459
+20230301
+132行后增加 
+|--stackUpPic
+   |--12EPJ9225DH79_pnl.png
+   |--08TZ98275AA_pnl_L2~7.png
+   |--08TZ98275AA_pnl_L1~8.png
+   |--04TFA3090BC_pnl.png
+   |--04TFA3037AA_pnl.png
+   |--04BF17050GA_pnl.png
+32行后增加
+|--databasemodule_zh.qm
+|--databasemodule_en.qm
+文件夹及文件总数468
+20230302
+ 删除多余翻译文件一个
+ 文件夹及文件总数467
+20230306
+54行后增加|--orderModule.qss
+32行后增加
+|--dfmanalysismodule_en.qm
+|--dfmanalysismodule_zh.qm
+文件夹及文件总数470
+20230308
+443行后增加|--EDAConfig.ini
+430行后增加|--orderModule.dll
+文件夹及文件总数472
+20230310
+471行后增加|--AutoMatrix.dll
+22行后增加
+|--ordermodule_zh.qm
+|--ordermodule_en.qm
+文件夹及文件总数475
+
 
 
 
