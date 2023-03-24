@@ -146,6 +146,7 @@
                      |--inflationContractionModule.qss
                      |--in_stackupWidget.qss
                      |--in_queryPage.qss
+                     |--in_prefillPage.qss
                      |--importTipDialog.qss
                      |--importModule.qss
                      |--importFileWidget.qss
