@@ -22,6 +22,8 @@ SDK使用：将sdk中的文件复制到EDAPro项目trunk目录下EPEDAPro文件�
 
 5， 文件打包；
 
+![程序截图](https://github.com/wlawlawlawla/releaseIndex/blob/main/pyScripts/%E5%8F%91%E5%B8%83%E7%A8%8B%E5%BA%8F.png)
+
 （1）、第一行点击选择文件，定位到release目录上一级，会自动填写地址；
 
 （2）、第二行填写本次发布版本的SVN版本；
