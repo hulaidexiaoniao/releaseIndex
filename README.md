@@ -2,9 +2,13 @@
 ## 简介
 本项目主要是为了管理EPEDAPro发布所用脚本及程序发布目录，但也包含epkernel目录与发布报告等其他文件。
 ## 文件
-- pyScripts:发布程序脚本
-- releaseIndex.txt:EPEDAPro程序发布目录
-- releaseLog.md:发布目录修改日志
+- pyScripts: 发布程序脚本及EPEDAPro更新方法
+- releaseIndex.txt: EPEDAPro程序发布目录
+- releaseLog.md: 发布目录修改日志
+- EPEDAPro发布报告.xlsx: EPEDAPro新版本发布情况及信息汇总表
+- mongoReleaseIndex.txt: 本地版EPEDAPro发布目录
+- epkernel目录.txt: epkernel对应bin包文件目录
+- CAMGuide目录.txt: EPEDAPro需要使用的CamGuide的文件目录
 
 ## 使用
 关于发布脚本的使用，具体见[发布流程](https://github.com/wlawlawlawla/releaseIndex/blob/main/%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B.docx)。
@@ -29,7 +33,9 @@ SDK使用：将sdk中的文件复制到EDAPro项目trunk目录下EPEDAPro文件�
 
 （2）、第二行填写本次发布版本的SVN版本；
 
-（3）、第三行当需要打包的是EDAProSDK时，选择True，完整EDAPro程序时选择False； （4）、发布目录地址EPSemicon/releaseIndex (github.com)，下载到本地后使用，发布目录选择：
+（3）、第三行当需要打包的是EDAProSDK时，选择True，完整EDAPro程序时选择False； 
+
+（4）、发布目录地址EPSemicon/releaseIndex (github.com)，下载到本地后使用，发布目录选择：
 
       测试版与官网版SDK选择EPEDAProSDK发布目录.txt；
 
@@ -39,4 +45,15 @@ SDK使用：将sdk中的文件复制到EDAPro项目trunk目录下EPEDAPro文件�
 
 （5）、前面四项填写完后，先点击文件汇总，再点击发布，就会有文件夹产生在桌面，该文件夹就是需要发布的SDK或程序，文件夹名就是本次发布版本号；
 
-（6）、如果发布的是本地版，在第五步完成之后再点击按钮mongo版本就会将文件夹中的部分文件内容更改，改为本地版所需的内容，本地版打包完成
+（6）、如果发布的是本地版，在第五步完成之后再点击按钮mongo版本就会将文件夹中的部分文件内容更改，改为本地版所需的内容，本地版打包完成。
+## 文件改动须知
+* 每次当程序中使用文件有变化时，都需要及时修改相对应的发布目录，并在releaseLog.md文件中添加修改记录，格式为：
+
+      日期           example： 20230223        
+
+      修改内容                  55行后增加|--myCalendar.qss 
+
+      文件夹总数                文件夹及文件总数457
+
+      
+
