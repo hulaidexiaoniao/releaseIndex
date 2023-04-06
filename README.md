@@ -1,6 +1,6 @@
 
 ## 简介
-本项目主要是为了管理EPEDAPro发布所用脚本及程序发布目录，但也包含epkernel目录与发布报告等其他文件。
+[本项目](https://github.com/EPSemicon/releaseIndex)主要是为了管理EPEDAPro发布所用脚本及程序发布目录，但也包含epkernel目录与发布报告等其他文件。
 ## 文件
 - pyScripts: 发布程序脚本及EPEDAPro更新方法
 - releaseIndex.txt: EPEDAPro程序发布目录
