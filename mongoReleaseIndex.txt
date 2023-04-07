@@ -233,6 +233,8 @@
                      |--Rectangle.png
                      |--radioUnchecked.png
                      |--radioCheked.png
+                     |--query_right.png
+                     |--query_left.png
                      |--pw_open.png
                      |--pw_close.png
                      |--projectSourceFilter_checked.png
@@ -431,6 +433,8 @@
                      |--EPEDAPro_loginBackImg.png
                      |--EPEDAPro.ico
                      |--ellipsis.png
+                     |--ellipse_normal.png
+                     |--ellipse_checked.png
                      |--Edit.png
                      |--EDAPro_Icon.svg
                      |--EDAPro_Icon.png
@@ -609,6 +613,8 @@
                |--libmpfr-4.dll
                |--libiconv.dll
                |--libgmp-10.dll
+               |--libGLESv2.dll
+               |--libEGL.dll
                |--libeay32.dll
                |--libcurl.dll
                |--layout_core.dll
@@ -3585,10 +3591,12 @@
                |--databaseModule.dll
                |--database.cfg
                |--dataAnalysis.ini
+               |--d3dcompiler_47.dll
                |--DAL.dll
                |--cximage.dll
                |--CppUnit64.dll
                |--config
+                  |--UiStyleConfig.json
                   |--shortcut_key.json
                   |--server.json
                   |--pluginConfig.json
