@@ -263,6 +263,18 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
 20230324
 148行后增加|--in_prefillPage.qss
  文件夹及文件总数3527
+ 20230407
+ 3352行后增加|--UiStyleConfig.json
+ 3348行后增加|--d3dcompiler_47.dll
+ 610行后增加|--libGLESv2.dll
+           |--libEGL.dll
+ 433行后增加|--ellipse_normal.png
+           |--ellipse_checked.png
+235行后增加|--query_right.png
+          |--query_left.png
+ 
+ 
+ 
 
 ========================================================================================
 SDK index
