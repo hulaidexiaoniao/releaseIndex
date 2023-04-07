@@ -81,6 +81,7 @@
                      |--inflationContractionModule.qss
                      |--in_stackupWidget.qss
                      |--in_queryPage.qss
+                     |--in_prefillPage.qss
                      |--importTipDialog.qss
                      |--importModule.qss
                      |--importFileWidget.qss
@@ -165,6 +166,8 @@
                      |--Rectangle.png
                      |--radioUnchecked.png
                      |--radioCheked.png
+                     |--query_right.png
+                     |--query_left.png
                      |--pw_open.png
                      |--pw_close.png
                      |--progressIMG.png
@@ -363,6 +366,8 @@
                      |--EPEDAPro_loginBackImg.png
                      |--EPEDAPro.ico
                      |--ellipsis.png
+                     |--ellipse_normal.png
+                     |--ellipse_checked.png
                      |--Edit.png
                      |--EDAPro_Icon.svg
                      |--EDAPro_Icon.png

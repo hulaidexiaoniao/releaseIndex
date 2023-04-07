@@ -4,7 +4,7 @@
                |--qtwebengine_resources.pak
                |--qtwebengine_devtools_resources.pak
                |--icudtl.dat
-            |--EPEDAPro
+            |--release
                |--zlibwapi.dll
                |--Widget_Common.dll
                |--WebView.dll
@@ -141,12 +141,12 @@
                      |--jobInMemoryLargeStyleWidgetSelect.qss
                      |--jobInMemoryLargeStyleWidgetRename.qss
                      |--jobInMemoryLargeStyleWidgetDeSelect.qss
-                     |--inputViewSourceFile.qss
-                     |--inputAdvancedSetting.qss
-                     |--inflationContractionModule.qss
                      |--in_stackupWidget.qss
                      |--in_queryPage.qss
                      |--in_prefillPage.qss
+                     |--inputViewSourceFile.qss
+                     |--inputAdvancedSetting.qss
+                     |--inflationContractionModule.qss
                      |--importTipDialog.qss
                      |--importModule.qss
                      |--importFileWidget.qss
@@ -237,9 +237,9 @@
                      |--query_left.png
                      |--pw_open.png
                      |--pw_close.png
-                     |--progressIMG.png
-                     |--projectSourceFilter.png
                      |--projectSourceFilter_checked.png
+                     |--projectSourceFilter.png
+                     |--progressIMG.png
                      |--pcb_impedanceSettings_back.png
                      |--PCB_goBack.png
                      |--PCB_createSheet_normal.png
@@ -423,10 +423,10 @@
                      |--export_success.png
                      |--export_inputParamsImg.png
                      |--export_failed.png
-                     |--eqLink.png
                      |--eq_goBack.png
                      |--eq_deleteImg.png
                      |--eq_addImg.png
+                     |--eqLink.png
                      |--eqEdit.png
                      |--eqConfirmMake.png
                      |--eqCheck.png
@@ -477,8 +477,8 @@
                      |--arrowlater.png
                      |--arrowheaa.png
                   |--font
-                     |--Inter-Regular-9.otf
                      |--Inter.ttf
+                     |--Inter-Regular-9.otf
                      |--CooperBlack.ttf
                      |--Alibaba-PuHuiTi-Regular.ttf
                      |--Alibaba-PuHuiTi-Medium.ttf
@@ -593,6 +593,7 @@
                |--msvcr110.dll
                |--msvcr100.dll
                |--msvcp140.dll
+               |--MongoFiles.py
                |--mongoc-1.0.dll
                |--Model.dll
                |--MICore.dll
@@ -748,6 +749,14 @@
                         |--_distutils_hack
                            |--__init__.py
                            |--override.py
+                        |--win32_setctime.py
+                        |--win32_setctime-1.1.0.dist-info
+                           |--WHEEL
+                           |--top_level.txt
+                           |--RECORD
+                           |--METADATA
+                           |--LICENSE
+                           |--INSTALLER
                         |--wheel
                            |--__main__.py
                            |--__init__.py
@@ -2585,6 +2594,134 @@
                            |--pyrcc.pyd
                            |--pylupdate_main.py
                            |--pylupdate.pyd
+                        |--pymongo-4.3.3.dist-info
+                           |--WHEEL
+                           |--top_level.txt
+                           |--REQUESTED
+                           |--RECORD
+                           |--METADATA
+                           |--LICENSE
+                           |--INSTALLER
+                        |--pymongo
+                           |--__pycache__
+                              |--__init__.cpython-37.pyc
+                              |--_version.cpython-37.pyc
+                              |--_csot.cpython-37.pyc
+                              |--write_concern.cpython-37.pyc
+                              |--uri_parser.cpython-37.pyc
+                              |--typings.cpython-37.pyc
+                              |--topology_description.cpython-37.pyc
+                              |--topology.cpython-37.pyc
+                              |--ssl_support.cpython-37.pyc
+                              |--ssl_context.cpython-37.pyc
+                              |--srv_resolver.cpython-37.pyc
+                              |--socket_checker.cpython-37.pyc
+                              |--settings.cpython-37.pyc
+                              |--server_type.cpython-37.pyc
+                              |--server_selectors.cpython-37.pyc
+                              |--server_description.cpython-37.pyc
+                              |--server_api.cpython-37.pyc
+                              |--server.cpython-37.pyc
+                              |--saslprep.cpython-37.pyc
+                              |--results.cpython-37.pyc
+                              |--response.cpython-37.pyc
+                              |--read_preferences.cpython-37.pyc
+                              |--read_concern.cpython-37.pyc
+                              |--pyopenssl_context.cpython-37.pyc
+                              |--pool.cpython-37.pyc
+                              |--periodic_executor.cpython-37.pyc
+                              |--operations.cpython-37.pyc
+                              |--ocsp_support.cpython-37.pyc
+                              |--ocsp_cache.cpython-37.pyc
+                              |--network.cpython-37.pyc
+                              |--monitoring.cpython-37.pyc
+                              |--monitor.cpython-37.pyc
+                              |--mongo_client.cpython-37.pyc
+                              |--message.cpython-37.pyc
+                              |--max_staleness_selectors.cpython-37.pyc
+                              |--lock.cpython-37.pyc
+                              |--helpers.cpython-37.pyc
+                              |--hello.cpython-37.pyc
+                              |--event_loggers.cpython-37.pyc
+                              |--errors.cpython-37.pyc
+                              |--encryption_options.cpython-37.pyc
+                              |--encryption.cpython-37.pyc
+                              |--driver_info.cpython-37.pyc
+                              |--database.cpython-37.pyc
+                              |--daemon.cpython-37.pyc
+                              |--cursor.cpython-37.pyc
+                              |--compression_support.cpython-37.pyc
+                              |--common.cpython-37.pyc
+                              |--command_cursor.cpython-37.pyc
+                              |--collection.cpython-37.pyc
+                              |--collation.cpython-37.pyc
+                              |--client_session.cpython-37.pyc
+                              |--client_options.cpython-37.pyc
+                              |--change_stream.cpython-37.pyc
+                              |--bulk.cpython-37.pyc
+                              |--auth_aws.cpython-37.pyc
+                              |--auth.cpython-37.pyc
+                              |--aggregation.cpython-37.pyc
+                           |--__init__.py
+                           |--_version.py
+                           |--_csot.py
+                           |--_cmessage.cp37-win_amd64.pyd
+                           |--write_concern.py
+                           |--uri_parser.py
+                           |--typings.py
+                           |--topology_description.py
+                           |--topology.py
+                           |--ssl_support.py
+                           |--ssl_context.py
+                           |--srv_resolver.py
+                           |--socket_checker.py
+                           |--settings.py
+                           |--server_type.py
+                           |--server_selectors.py
+                           |--server_description.py
+                           |--server_api.py
+                           |--server.py
+                           |--saslprep.py
+                           |--results.py
+                           |--response.py
+                           |--read_preferences.py
+                           |--read_concern.py
+                           |--pyopenssl_context.py
+                           |--py.typed
+                           |--pool.py
+                           |--periodic_executor.py
+                           |--operations.py
+                           |--ocsp_support.py
+                           |--ocsp_cache.py
+                           |--network.py
+                           |--monitoring.py
+                           |--monitor.py
+                           |--mongo_client.py
+                           |--message.py
+                           |--max_staleness_selectors.py
+                           |--lock.py
+                           |--helpers.py
+                           |--hello.py
+                           |--event_loggers.py
+                           |--errors.py
+                           |--encryption_options.py
+                           |--encryption.py
+                           |--driver_info.py
+                           |--database.py
+                           |--daemon.py
+                           |--cursor.py
+                           |--compression_support.py
+                           |--common.py
+                           |--command_cursor.py
+                           |--collection.py
+                           |--collation.py
+                           |--client_session.py
+                           |--client_options.py
+                           |--change_stream.py
+                           |--bulk.py
+                           |--auth_aws.py
+                           |--auth.py
+                           |--aggregation.py
                         |--psutil-5.7.2.dist-info
                            |--WHEEL
                            |--top_level.txt
@@ -3195,6 +3332,56 @@
                               |--cache.py
                               |--build_env.py
                            |--py.typed
+                        |--loguru-0.6.0.dist-info
+                           |--WHEEL
+                           |--top_level.txt
+                           |--REQUESTED
+                           |--RECORD
+                           |--METADATA
+                           |--LICENSE
+                           |--INSTALLER
+                        |--loguru
+                           |--__pycache__
+                              |--__init__.cpython-37.pyc
+                              |--_string_parsers.cpython-37.pyc
+                              |--_simple_sinks.cpython-37.pyc
+                              |--_recattrs.cpython-37.pyc
+                              |--_logger.cpython-37.pyc
+                              |--_locks_machinery.cpython-37.pyc
+                              |--_handler.cpython-37.pyc
+                              |--_get_frame.cpython-37.pyc
+                              |--_filters.cpython-37.pyc
+                              |--_file_sink.cpython-37.pyc
+                              |--_error_interceptor.cpython-37.pyc
+                              |--_defaults.cpython-37.pyc
+                              |--_datetime.cpython-37.pyc
+                              |--_ctime_functions.cpython-37.pyc
+                              |--_contextvars.cpython-37.pyc
+                              |--_colorizer.cpython-37.pyc
+                              |--_colorama.cpython-37.pyc
+                              |--_better_exceptions.cpython-37.pyc
+                              |--_asyncio_loop.cpython-37.pyc
+                           |--__init__.pyi
+                           |--__init__.py
+                           |--_string_parsers.py
+                           |--_simple_sinks.py
+                           |--_recattrs.py
+                           |--_logger.py
+                           |--_locks_machinery.py
+                           |--_handler.py
+                           |--_get_frame.py
+                           |--_filters.py
+                           |--_file_sink.py
+                           |--_error_interceptor.py
+                           |--_defaults.py
+                           |--_datetime.py
+                           |--_ctime_functions.py
+                           |--_contextvars.py
+                           |--_colorizer.py
+                           |--_colorama.py
+                           |--_better_exceptions.py
+                           |--_asyncio_loop.py
+                           |--py.typed
                         |--idna-2.10.dist-info
                            |--WHEEL
                            |--top_level.txt
@@ -3213,6 +3400,15 @@
                            |--core.py
                            |--compat.py
                            |--codec.py
+                        |--gridfs
+                           |--__pycache__
+                              |--__init__.cpython-37.pyc
+                              |--grid_file.cpython-37.pyc
+                              |--errors.cpython-37.pyc
+                           |--__init__.py
+                           |--py.typed
+                           |--grid_file.py
+                           |--errors.py
                         |--distutils-precedence.pth
                         |--chardet-4.0.0.dist-info
                            |--WHEEL
@@ -3284,6 +3480,49 @@
                            |--__init__.py
                            |--core.py
                            |--cacert.pem
+                        |--bson
+                           |--__pycache__
+                              |--__init__.cpython-37.pyc
+                              |--_helpers.cpython-37.pyc
+                              |--tz_util.cpython-37.pyc
+                              |--timestamp.cpython-37.pyc
+                              |--son.cpython-37.pyc
+                              |--regex.cpython-37.pyc
+                              |--raw_bson.cpython-37.pyc
+                              |--objectid.cpython-37.pyc
+                              |--min_key.cpython-37.pyc
+                              |--max_key.cpython-37.pyc
+                              |--json_util.cpython-37.pyc
+                              |--int64.cpython-37.pyc
+                              |--errors.cpython-37.pyc
+                              |--decimal128.cpython-37.pyc
+                              |--dbref.cpython-37.pyc
+                              |--datetime_ms.cpython-37.pyc
+                              |--codec_options.cpython-37.pyc
+                              |--code.cpython-37.pyc
+                              |--binary.cpython-37.pyc
+                           |--__init__.py
+                           |--_helpers.py
+                           |--_cbson.cp37-win_amd64.pyd
+                           |--tz_util.py
+                           |--timestamp.py
+                           |--son.py
+                           |--regex.py
+                           |--raw_bson.py
+                           |--py.typed
+                           |--objectid.py
+                           |--min_key.py
+                           |--max_key.py
+                           |--json_util.py
+                           |--int64.py
+                           |--errors.py
+                           |--decimal128.py
+                           |--dbref.py
+                           |--datetime_ms.py
+                           |--codec_options.pyi
+                           |--codec_options.py
+                           |--code.py
+                           |--binary.py
                   |--get-pip.py
                |--ep_engine.dll
                |--EpsLIB.dll
@@ -3476,9 +3715,9 @@
                         |--copy_orig_to_net.py
                   |--DXF
                      |--Orig
-                        |--auto_fix_origin.py
+                        |--import_path.py
                         |--auto_set_profile.py
-                        |--import_path.py      
+                        |--auto_fix_origin.py
                   |--config
                      |--PreGuideForQuote.json
                      |--PreGuide.json
