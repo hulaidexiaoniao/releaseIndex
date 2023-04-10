@@ -272,6 +272,20 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
            |--ellipse_checked.png
 235行后增加|--query_right.png
           |--query_left.png
+文件夹与文件总数3535
+20230410
+3381行后增加|--custconfig.json
+3372行后增加|--hook_config.json
+           |--Hooks
+              |--import_job.py
+              |--export_job.py
+              |--delete_entity.py
+              |--create_entity.py
+              |--add_text.py
+              |--add_pad.py
+3365行后增加|--menuConfig.json
+文件夹及文件总数3565
+
  
  
  
