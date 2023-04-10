@@ -3602,6 +3602,7 @@
                   |--pluginConfig.json
                   |--Panelization
                      |--FPC.json
+                  |--menuConfig.json
                   |--keyboard_default.json
                   |--keyBoardjson
                      |--customTamplate1.json
@@ -3609,6 +3610,14 @@
                   |--keyboard.json
                   |--jwdms_dbconfig.json
                   |--impedance_param.json
+                  |--Hooks
+                     |--import_job.py
+                     |--export_job.py
+                     |--delete_entity.py
+                     |--create_entity.py
+                     |--add_text.py
+                     |--add_pad.py
+                  |--hook_config.json
                   |--GalvanicEtchCompensationConfig
                      |--DefaultTemplate.json
                      |--.zero.json
@@ -3618,6 +3627,7 @@
                      |--DR_drill.json
                   |--dms_orderreceive.json
                   |--dms_dbconfig.json
+                  |--custconfig.json
                   |--checkDisplay.json
                   |--cammatenodes.json
                   |--AutoMatrixConfig
