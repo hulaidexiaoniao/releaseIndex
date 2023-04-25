@@ -448,6 +448,7 @@
                |--drillAnalysisModule.dll
                |--dfmDataAnalysis.dll
                |--dfmAnalysisModule.dll
+               |--DfmAnalysis.exe
                |--debug.log
                |--databaseModule.dll
                |--dataAnalysis.ini
