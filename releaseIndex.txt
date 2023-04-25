@@ -3339,6 +3339,7 @@
                |--DFM_Graphic_AnalysisTab.dll
                |--dfmDataAnalysis.dll
                |--dfmAnalysisModule.dll
+               |--DfmAnalysis.exe
                |--demo.dll
                |--debug.log
                |--DBUtility.dll
