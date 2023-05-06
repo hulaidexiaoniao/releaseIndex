@@ -10,6 +10,7 @@
                |--uiWidgetModule.dll
                |--travelerModule.dll
                |--syncqt.pl
+               |--SuQingAbutmentModule.dll
                |--startRepair.bat
                |--stackUpImpedanceModule.dll
                |--settingsModule.dll
