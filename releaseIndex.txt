@@ -69,6 +69,7 @@
                   |--compare.json
                |--syncqt.pl
                |--symbol_to_svg.dll
+               |--SuQingAbutmentModule.dll
                |--startRepair.bat
                |--stackUpImpedanceModule.dll
                |--ssleay32.dll
