@@ -227,7 +227,9 @@
                      |--Rectangle.png
                      |--radioUnchecked.png
                      |--radioCheked.png
+                     |--query_right_press.png
                      |--query_right.png
+                     |--query_left_press.png
                      |--query_left.png
                      |--pw_open.png
                      |--pw_close.png
