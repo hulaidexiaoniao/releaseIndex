@@ -19,6 +19,8 @@
                   |--transFiles
                      |--uiwidgetmodule_zh.qm
                      |--uiwidgetmodule_en.qm
+                     |--profileplotmodule_zh.qm
+                     |--profileplotmodule_en.qm
                      |--panelizationmodule_zh.qm
                      |--panelizationmodule_en.qm
                      |--ordermodule_zh.qm
@@ -53,6 +55,7 @@
                      |--settingsModule.qss
                      |--radioButton.qss
                      |--ProgressBar.qss
+                     |--profilePlotModule.qss
                      |--pcbOpenedJobWidget.qss
                      |--panelizationPCB.qss
                      |--panelizationModule.qss
@@ -169,6 +172,10 @@
                      |--projectSourceFilter_checked.png
                      |--projectSourceFilter.png
                      |--progressIMG.png
+                     |--ppmDropDown.png
+                     |--ppm_search.png
+                     |--ppm_imgIcon.png
+                     |--ppm_detailed.png
                      |--pcb_impedanceSettings_back.png
                      |--PCB_goBack.png
                      |--PCB_createSheet_normal.png
@@ -426,6 +433,7 @@
                |--Qt5PrintSupport.dll
                |--Qt5Positioning.dll
                |--qt.conf
+               |--profilePlotModule.dll
                |--preProcessModule.dll
                |--pluginManager.dll
                |--pcbConfig.ini
