@@ -121,6 +121,7 @@
                      |--radioButton.qss
                      |--ProgressBar.qss
                      |--profilePlotModule.qss
+                     |--profilePlotMenu.qss
                      |--pcbOpenedJobWidget.qss
                      |--panelizationPCB.qss
                      |--panelizationModule.qss
@@ -239,10 +240,14 @@
                      |--projectSourceFilter_checked.png
                      |--projectSourceFilter.png
                      |--progressIMG.png
-                     |--ppmDropDown.png
+                     |--ppm_sortBtn_icon1.png
                      |--ppm_search.png
+                     |--ppm_menu_selectedIcon.png
                      |--ppm_imgIcon.png
                      |--ppm_detailed.png
+                     |--ppm_checkBtn_icon1.png
+                     |--ppm_btn_icon2.png
+                     |--ppmDropDown.png
                      |--pcb_impedanceSettings_back.png
                      |--PCB_goBack.png
                      |--PCB_createSheet_normal.png
@@ -3395,6 +3400,7 @@
                   |--dms_dbconfig.json
                   |--custconfig.json
                   |--checkDisplay.json
+                  |--cexiantype.json
                   |--cammatenodes.json
                   |--AutoMatrixConfig
                      |--MatchRules.json
@@ -3419,6 +3425,85 @@
                |--cgal_engine.dll
                |--CGAL_Core-vc140-mt-4.9-I-900.dll
                |--CGAL-vc140-mt-4.9-I-900.dll
+               |--CeXian
+                  |--cexiantu
+                     |--run_all.py
+                     |--MI
+                        |--__pycache__
+                           |--import_path.cpython-37.pyc
+                           |--fz_smd.cpython-37.pyc
+                        |--specialLineWidth.py
+                        |--specialLineUi.py
+                        |--specialLine.ui
+                        |--note_lwld_info.py
+                        |--minRing.py
+                        |--minPitchBGA.py
+                        |--import_path.py
+                        |--galvanic.py
+                        |--fz_smd.py
+                        |--conductor.py
+                        |--blindHole.py
+                        |--bgaPitch.py
+                        |--bga.py
+                     |--job
+                     |--ITC
+                     |--CAM
+                        |--mark_jixie.py
+                        |--import_path.py
+                  |--base
+                     |--__pycache__
+                        |--layer_info.cpython-37.pyc
+                        |--job_operation.cpython-37.pyc
+                     |--UILib.py
+                     |--rangesconfig1
+                        |--SurfaceAnalyzer
+                        |--SolderMaskChecks
+                        |--SilkScreenChecks
+                        |--SignalLayerChecks
+                        |--PrepareChecks
+                        |--PadSnapping
+                        |--DrillChecks
+                        |--DFM_Teardrops
+                        |--DFM_SolderMaskOpt
+                        |--DFM_SignalLayerOpt
+                        |--DFM_NFPRemoval
+                        |--BoardDrillChecks
+                     |--rangesconfig
+                        |--SurfaceAnalyzer
+                           |--SurfaceAnalyzerRanges.json
+                        |--SolderMaskChecks
+                           |--SolderMaskRanges.json
+                        |--SilkScreenChecks
+                           |--SilkScreenRanges.json
+                        |--SignalLayerChecks
+                           |--SignalLayerRanges.json
+                        |--PrepareChecks
+                           |--PrePareRanges.json
+                        |--PadSnapping
+                           |--PadSnappingRanges.json
+                        |--DrillChecks
+                           |--DrillRanges.json
+                        |--DFM_Teardrops
+                           |--TeardropsRanges.json
+                        |--DFM_SolderMaskOpt
+                           |--SolderMaskOptRanges.json
+                        |--DFM_SignalLayerOpt
+                           |--SignalLayerOptRanges.json
+                        |--DFM_NFPRemoval
+                           |--NFPRemoval.json
+                        |--BoardDrillChecks
+                           |--BoardDrillRanges.json
+                     |--prepare_check.py
+                     |--layer_info.py
+                     |--job_operation.py
+                     |--epcam
+                        |--__pycache__
+                           |--epcam_api.cpython-37.pyc
+                           |--epcam.cpython-37.pyc
+                        |--epcam_log.py
+                        |--epcam_api.py
+                        |--epcam.py
+                     |--analysis_dfm.py
                |--Cam_Tools.dll
                |--CAM_Progress_Dialog.dll
                |--CAM_PNData_View.dll
