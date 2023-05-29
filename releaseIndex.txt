@@ -245,6 +245,7 @@
                      |--ppm_menu_selectedIcon.png
                      |--ppm_imgIcon.png
                      |--ppm_detailed.png
+                     |--ppm_checkBtn_icon2.png
                      |--ppm_checkBtn_icon1.png
                      |--ppm_btn_icon2.png
                      |--ppmDropDown.png
