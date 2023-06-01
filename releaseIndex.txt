@@ -3447,6 +3447,7 @@
                         |--blindHole.py
                         |--bgaPitch.py
                         |--bga.py
+                        |--01005smd.py
                      |--job
                      |--ITC
                      |--CAM
