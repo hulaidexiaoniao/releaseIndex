@@ -10,6 +10,7 @@
                |--uiWidgetModule.dll
                |--travelerModule.dll
                |--syncqt.pl
+               |--SuQingAbutmentModule.dll
                |--startRepair.bat
                |--stackUpImpedanceModule.dll
                |--settingsModule.dll
@@ -18,6 +19,8 @@
                   |--transFiles
                      |--uiwidgetmodule_zh.qm
                      |--uiwidgetmodule_en.qm
+                     |--profileplotmodule_zh.qm
+                     |--profileplotmodule_en.qm
                      |--panelizationmodule_zh.qm
                      |--panelizationmodule_en.qm
                      |--ordermodule_zh.qm
@@ -52,6 +55,8 @@
                      |--settingsModule.qss
                      |--radioButton.qss
                      |--ProgressBar.qss
+                     |--profilePlotModule.qss
+                     |--profilePlotMenu.qss
                      |--pcbOpenedJobWidget.qss
                      |--panelizationPCB.qss
                      |--panelizationModule.qss
@@ -76,12 +81,12 @@
                      |--jobInMemoryLargeStyleWidgetSelect.qss
                      |--jobInMemoryLargeStyleWidgetRename.qss
                      |--jobInMemoryLargeStyleWidgetDeSelect.qss
-                     |--inputViewSourceFile.qss
-                     |--inputAdvancedSetting.qss
-                     |--inflationContractionModule.qss
                      |--in_stackupWidget.qss
                      |--in_queryPage.qss
                      |--in_prefillPage.qss
+                     |--inputViewSourceFile.qss
+                     |--inputAdvancedSetting.qss
+                     |--inflationContractionModule.qss
                      |--importTipDialog.qss
                      |--importModule.qss
                      |--importFileWidget.qss
@@ -138,13 +143,6 @@
                      |--tabButton_close_checkedFocus.png
                      |--sync_drill_icon.png
                      |--switch_on.png
-                     |--stackUpPic
-                        |--12EPJ9225DH79_pnl.png
-                        |--08TZ98275AA_pnl_L2~7.png
-                        |--08TZ98275AA_pnl_L1~8.png
-                        |--04TFA3090BC_pnl.png
-                        |--04TFA3037AA_pnl.png
-                        |--04BF17050GA_pnl.png
                      |--sRectangle.png
                      |--sortChange1.png
                      |--sortChange.png
@@ -166,13 +164,24 @@
                      |--Rectangle.png
                      |--radioUnchecked.png
                      |--radioCheked.png
+                     |--query_right_press.png
                      |--query_right.png
+                     |--query_left_press.png
                      |--query_left.png
                      |--pw_open.png
                      |--pw_close.png
-                     |--progressIMG.png
-                     |--projectSourceFilter.png
                      |--projectSourceFilter_checked.png
+                     |--projectSourceFilter.png
+                     |--progressIMG.png
+                     |--ppm_sortBtn_icon1.png
+                     |--ppm_search.png
+                     |--ppm_menu_selectedIcon.png
+                     |--ppm_imgIcon.png
+                     |--ppm_detailed.png
+                     |--ppm_checkBtn_icon2.png
+                     |--ppm_checkBtn_icon1.png
+                     |--ppm_btn_icon2.png
+                     |--ppmDropDown.png
                      |--pcb_impedanceSettings_back.png
                      |--PCB_goBack.png
                      |--PCB_createSheet_normal.png
@@ -356,10 +365,10 @@
                      |--export_success.png
                      |--export_inputParamsImg.png
                      |--export_failed.png
-                     |--eqLink.png
                      |--eq_goBack.png
                      |--eq_deleteImg.png
                      |--eq_addImg.png
+                     |--eqLink.png
                      |--eqEdit.png
                      |--eqConfirmMake.png
                      |--eqCheck.png
@@ -410,8 +419,8 @@
                      |--arrowlater.png
                      |--arrowheaa.png
                   |--font
-                     |--Inter-Regular-9.otf
                      |--Inter.ttf
+                     |--Inter-Regular-9.otf
                      |--CooperBlack.ttf
                      |--Alibaba-PuHuiTi-Regular.ttf
                      |--Alibaba-PuHuiTi-Medium.ttf
@@ -430,6 +439,7 @@
                |--Qt5PrintSupport.dll
                |--Qt5Positioning.dll
                |--qt.conf
+               |--profilePlotModule.dll
                |--preProcessModule.dll
                |--pluginManager.dll
                |--pcbConfig.ini
@@ -453,6 +463,7 @@
                |--drillAnalysisModule.dll
                |--dfmDataAnalysis.dll
                |--dfmAnalysisModule.dll
+               |--DfmAnalysis.exe
                |--debug.log
                |--databaseModule.dll
                |--dataAnalysis.ini
@@ -465,15 +476,97 @@
                      |--customTamplate1.json
                      |--currentTemplate.txt
                   |--impedance_param.json
+                  |--checkDisplay.json
+                  |--cexiantype.json
                   |--AutoMatrixConfig
                      |--MatchRules.json
                      |--FactoryNames.json
                      |--DefaultBoardCount.json
-                  |--checkDisplay.json
                |--cloudTransferModule.dll
                |--cloudProjectModule.dll
                |--checkUpData
                   |--updateVersion.json
+               |--CeXian
+                  |--cexiantu
+                     |--run_all.py
+                     |--MI
+                        |--__pycache__
+                           |--import_path.cpython-37.pyc
+                           |--fz_smd.cpython-37.pyc
+                        |--specialLineWidth.py
+                        |--specialLineUi.py
+                        |--specialLine.ui
+                        |--runByJsonData.py
+                        |--note_lwld_info.py
+                        |--minRing.py
+                        |--minPitchBGA.py
+                        |--import_path.py
+                        |--galvanic.py
+                        |--fz_smd.py
+                        |--conductor.py
+                        |--blindHole.py
+                        |--bgaPitch.py
+                        |--bga.py
+                        |--01005smd.py
+                     |--job
+                     |--ITC
+                     |--CAM
+                        |--mark_jixie.py
+                        |--import_path.py
+                  |--base
+                     |--__pycache__
+                        |--layer_info.cpython-37.pyc
+                        |--job_operation.cpython-37.pyc
+                     |--UILib.py
+                     |--rangesconfig1
+                        |--SurfaceAnalyzer
+                        |--SolderMaskChecks
+                        |--SilkScreenChecks
+                        |--SignalLayerChecks
+                        |--PrepareChecks
+                        |--PadSnapping
+                        |--DrillChecks
+                        |--DFM_Teardrops
+                        |--DFM_SolderMaskOpt
+                        |--DFM_SignalLayerOpt
+                        |--DFM_NFPRemoval
+                        |--BoardDrillChecks
+                     |--rangesconfig
+                        |--SurfaceAnalyzer
+                           |--SurfaceAnalyzerRanges.json
+                        |--SolderMaskChecks
+                           |--SolderMaskRanges.json
+                        |--SilkScreenChecks
+                           |--SilkScreenRanges.json
+                        |--SignalLayerChecks
+                           |--SignalLayerRanges.json
+                        |--PrepareChecks
+                           |--PrePareRanges.json
+                        |--PadSnapping
+                           |--PadSnappingRanges.json
+                        |--DrillChecks
+                           |--DrillRanges.json
+                        |--DFM_Teardrops
+                           |--TeardropsRanges.json
+                        |--DFM_SolderMaskOpt
+                           |--SolderMaskOptRanges.json
+                        |--DFM_SignalLayerOpt
+                           |--SignalLayerOptRanges.json
+                        |--DFM_NFPRemoval
+                           |--NFPRemoval.json
+                        |--BoardDrillChecks
+                           |--BoardDrillRanges.json
+                     |--prepare_check.py
+                     |--layer_info.py
+                     |--job_operation.py
+                     |--epcam
+                        |--__pycache__
+                           |--epcam_api.cpython-37.pyc
+                           |--epcam.cpython-37.pyc
+                        |--epcam_log.py
+                        |--epcam_api.py
+                        |--epcam.py
+                     |--analysis_dfm.py
                |--camJobVsModule.dll
                |--batchDfmAnalysisModule.dll
                |--AutoMatrix.dll

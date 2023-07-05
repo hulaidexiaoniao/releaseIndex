@@ -272,6 +272,66 @@ line18后插入添加travelerModule.dll，文件夹及文件数量4704
            |--ellipse_checked.png
 235行后增加|--query_right.png
           |--query_left.png
+文件夹与文件总数3535
+20230410
+3381行后增加|--custconfig.json
+3372行后增加|--hook_config.json
+           |--Hooks
+              |--import_job.py
+              |--export_job.py
+              |--delete_entity.py
+              |--create_entity.py
+              |--add_text.py
+              |--add_pad.py
+3365行后增加|--menuConfig.json
+文件夹及文件总数3545
+20230410
+增加张所管理模块所用图片及其文件夹2139个
+文件夹及文件总数5684
+20230411
+2374行后增加|--query_left_press.png
+2375行后增加|--query_right_press.png
+文件夹及文件总数5686
+20230412  
+删除涨缩模块使用图片
+文件夹及文件总数3540
+20230425
+3341行后增加|--DfmAnalysis.exe
+文件夹及文件总数3541
+20230506
+71行后增加|--SuQingAbutmentModule.dll
+文件夹及文件总数3542
+20230508
+546行后增加|--profilePlotModule.dll
+238行后增加           |--ppmDropDown.png
+                     |--ppm_search.png
+                     |--ppm_imgIcon.png
+                     |--ppm_detailed.png
+120行后增加|--profilePlotModule.qss
+83行后增加|--profileplotmodule_zh.qm
+         |--profileplotmodule_en.qm
+文件夹及文件总数3550
+20230510
+增加测线模块py文件79个
+|--cexiantype.json
+|--ppm_checkBtn_icon1.png
+|--ppm_btn_icon2.png
+|--ppm_menu_selectedIcon.png
+|--ppm_sortBtn_icon1.png
+|--profilePlotMenu.qss
+文件夹及文件总数3635
+20230518
+3437行后增加|--runByJsonData.py
+文件夹及文件总数3636
+20230529
+247行后增加|--ppm_checkBtn_icon2.png
+文件夹及文件总数3637
+2023061
+3449行后增加|--01005smd.py
+文件夹及文件总数3638
+
+
+
  
  
  
@@ -501,7 +561,54 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 168行后增加
 |--query_left.png
 |--query_right.png
-文件夹及文件总数481
+文件夹及文件总数480
+20230410
+增加张所管理模块所用图片及其文件夹2139个
+文件夹及文件总数2619
+20230411
+2308行后增加|--query_left_press.png
+2307行后增加|--query_right_press.png
+文件夹及文件总数2621
+20230412  
+删除涨缩模块使用图片
+文件夹及文件总数475
+20230425
+450行后增加|--DfmAnalysis.exe
+文件夹及文件总数476
+20230506
+12行后增加|--SuQingAbutmentModule.dll
+文件夹及文件总数477
+20230508
+428行后增加|--profilePlotModule.dll
+171行后增加           |--ppmDropDown.png
+                     |--ppm_search.png
+                     |--ppm_imgIcon.png
+                     |--ppm_detailed.png
+55行后增加|--profilePlotModule.qss
+21行后增加|--profileplotmodule_zh.qm
+         |--profileplotmodule_en.qm
+文件夹及文件总数485
+20230510
+增加测线模块py文件79个
+|--cexiantype.json
+|--ppm_checkBtn_icon1.png
+|--ppm_btn_icon2.png
+|--ppm_menu_selectedIcon.png
+|--ppm_sortBtn_icon1.png
+|--profilePlotMenu.qss
+文件夹及文件总数570
+20230518
+497行后增加|--runByJsonData.py
+文件夹及文件总数571
+20230529
+180行后增加|--ppm_checkBtn_icon2.png
+文件夹及文件总数572
+2023061
+509行后增加|--01005smd.py
+文件夹及文件总数573
+
+
+
 
 
 

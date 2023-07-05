@@ -69,6 +69,7 @@
                   |--compare.json
                |--syncqt.pl
                |--symbol_to_svg.dll
+               |--SuQingAbutmentModule.dll
                |--startRepair.bat
                |--stackUpImpedanceModule.dll
                |--ssleay32.dll
@@ -205,13 +206,6 @@
                      |--tabButton_close_checkedFocus.png
                      |--sync_drill_icon.png
                      |--switch_on.png
-                     |--stackUpPic
-                        |--12EPJ9225DH79_pnl.png
-                        |--08TZ98275AA_pnl_L2~7.png
-                        |--08TZ98275AA_pnl_L1~8.png
-                        |--04TFA3090BC_pnl.png
-                        |--04TFA3037AA_pnl.png
-                        |--04BF17050GA_pnl.png
                      |--sRectangle.png
                      |--sortChange1.png
                      |--sortChange.png
@@ -233,7 +227,9 @@
                      |--Rectangle.png
                      |--radioUnchecked.png
                      |--radioCheked.png
+                     |--query_right_press.png
                      |--query_right.png
+                     |--query_left_press.png
                      |--query_left.png
                      |--pw_open.png
                      |--pw_close.png
@@ -3583,6 +3579,7 @@
                |--DFM_Graphic_AnalysisTab.dll
                |--dfmDataAnalysis.dll
                |--dfmAnalysisModule.dll
+               |--DfmAnalysis.exe
                |--demo.dll
                |--debug.log
                |--DBUtility.dll
@@ -3602,6 +3599,7 @@
                   |--pluginConfig.json
                   |--Panelization
                      |--FPC.json
+                  |--menuConfig.json
                   |--keyboard_default.json
                   |--keyBoardjson
                      |--customTamplate1.json
@@ -3609,6 +3607,14 @@
                   |--keyboard.json
                   |--jwdms_dbconfig.json
                   |--impedance_param.json
+                  |--Hooks
+                     |--import_job.py
+                     |--export_job.py
+                     |--delete_entity.py
+                     |--create_entity.py
+                     |--add_text.py
+                     |--add_pad.py
+                  |--hook_config.json
                   |--GalvanicEtchCompensationConfig
                      |--DefaultTemplate.json
                      |--.zero.json
@@ -3618,6 +3624,7 @@
                      |--DR_drill.json
                   |--dms_orderreceive.json
                   |--dms_dbconfig.json
+                  |--custconfig.json
                   |--checkDisplay.json
                   |--cammatenodes.json
                   |--AutoMatrixConfig
