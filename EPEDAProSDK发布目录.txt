@@ -5,6 +5,10 @@
                |--qtwebengine_devtools_resources.pak
                |--icudtl.dat
             |--release
+               |--d3dcompiler_47.dll
+               |--libEGL.dll
+               |--libGLESv2.dll
+               |--newCloudProjectModule.dll
                |--WebView.dll
                |--utilToolModule.dll
                |--uiWidgetModule.dll
@@ -17,6 +21,8 @@
                |--settings.ini
                |--resources
                   |--transFiles
+                     |--newcloudprojectmodule_en.qm
+                     |--newcloudprojectmodule_zh.qm
                      |--uiwidgetmodule_zh.qm
                      |--uiwidgetmodule_en.qm
                      |--profileplotmodule_zh.qm
@@ -44,6 +50,8 @@
                      |--camjobvsmodule_zh.qm
                      |--camjobvsmodule_en.qm
                   |--qss
+                     |--newcloudprojectmodule.qss
+                     |--newEqModule.qss
                      |--unitButton.qss
                      |--treeWidget.qss
                      |--tipsWidgetBlackStyle.qss
@@ -126,6 +134,22 @@
                      |--core.json
                      |--copper.json
                   |--images
+                     |--copy.png
+                     |--exit.png
+                     |--limitEdit.png
+                     |--transference.png
+                     |--information.png
+                     |--cloudProject_pmsWarnning.png
+                     |--cloudProject_authority.png
+                     |--cloudProject_cRegulation.png
+                     |--cloudProject_plan.png
+                     |--cloudProject_shareCode.png
+                     |--cloudProject_unReadEQ.png
+                     |--newCloudProject_last.png
+                     |--newCloudProject_next.png
+                     |--newcloudproject_createShareCode.png
+                     |--next.png
+                     |--omit.png
                      |--write.png
                      |--widget_dropWidget_backImg.png
                      |--Vectorssss.png
