@@ -636,6 +636,11 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 |--next.png
 |--omit.png
 文件夹及文件总数53+544=597
+137行后添加文件
+|--copyShareCode.png
+|--permission_disabled.png
+|--permission_enabled.png
+文件夹及文件总数53+547=600
 ========================================================================================
 epkernel bin
 20221021
