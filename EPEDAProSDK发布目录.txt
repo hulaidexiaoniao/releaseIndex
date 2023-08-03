@@ -134,6 +134,9 @@
                      |--core.json
                      |--copper.json
                   |--images
+                     |--copyShareCode.png
+                     |--permission_disabled.png
+                     |--permission_enabled.png
                      |--copy.png
                      |--exit.png
                      |--limitEdit.png
