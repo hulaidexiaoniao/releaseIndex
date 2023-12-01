@@ -606,12 +606,19 @@ line10后插入添加 travelerModule.dll，文件夹及文件数量369
 2023061
 509行后增加|--01005smd.py
 文件夹及文件总数573
-
-
-
-
-
-
+20231201
+24行添加两个翻译文件cryptomodule_en.qm和cryptomodule_zh.qm
+55行添加qss文件encryptModule.qss
+140行添加七个图片
+|--crypt_dirOpen.png
+|--crypt_save.png
+|--decrypt_copy.png
+|--encrypt_copy.png
+|--encrypt_progressChunk.png
+|--encrypt_radiobtn_checked.png
+|--exclamation.png
+508行添加一个json文件cryptKey.json     
+文件夹及文件总数584
 
 ========================================================================================
 epkernel bin
