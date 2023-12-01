@@ -21,6 +21,8 @@
                |--settings.ini
                |--resources
                   |--transFiles
+                     |--cryptomodule_en.qm
+                     |--cryptomodule_zh.qm
                      |--newcloudprojectmodule_en.qm
                      |--newcloudprojectmodule_zh.qm
                      |--uiwidgetmodule_zh.qm
