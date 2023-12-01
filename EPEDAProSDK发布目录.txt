@@ -9,6 +9,7 @@
                |--libEGL.dll
                |--libGLESv2.dll
                |--newCloudProjectModule.dll
+               |--cryptoModule.dll
                |--WebView.dll
                |--utilToolModule.dll
                |--uiWidgetModule.dll
