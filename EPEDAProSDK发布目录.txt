@@ -52,6 +52,7 @@
                      |--camjobvsmodule_zh.qm
                      |--camjobvsmodule_en.qm
                   |--qss
+                     |--encryptModule.qss
                      |--newcloudprojectmodule.qss
                      |--newEqModule.qss
                      |--unitButton.qss
@@ -136,6 +137,13 @@
                      |--core.json
                      |--copper.json
                   |--images
+                     |--crypt_dirOpen.png
+                     |--crypt_save.png
+                     |--decrypt_copy.png
+                     |--encrypt_copy.png
+                     |--encrypt_progressChunk.png
+                     |--encrypt_radiobtn_checked.png
+                     |--exclamation.png
                      |--copyShareCode.png
                      |--permission_disabled.png
                      |--permission_enabled.png
@@ -497,6 +505,7 @@
                |--databaseModule.dll
                |--dataAnalysis.ini
                |--config
+                  |--cryptKey.json
                   |--pluginConfig.json
                   |--Panelization
                      |--FPC.json
